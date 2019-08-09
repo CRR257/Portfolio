@@ -1,6 +1,9 @@
 import React from 'react';
+import {withRouter} from 'react-router-dom';
+import Main from './Main';
 
 class Typer extends React.Component {
+
 
     constructor(props) {
       super(props);
@@ -11,7 +14,7 @@ class Typer extends React.Component {
         loopNum: 0,
         typingSpeed: 150,
         heading:'Welcome:',
-        dataText:["I'm a developer"] 
+        dataText:["I'm a developer, ", "I love to make pages"] 
         }  
     }
   
@@ -21,7 +24,7 @@ class Typer extends React.Component {
   
     handleType = () => {
       const { isDeleting, loopNum, text, typingSpeed } = this.state;
-        const i = loopNum % this.state.dataText.length;
+      const i = loopNum % this.state.dataText.length;
       const fullText = this.state.dataText[i];
   
       this.setState({
@@ -43,18 +46,29 @@ class Typer extends React.Component {
       }
   
       setTimeout(this.handleType, typingSpeed);
+
     };
+
+    handleGoMain = event => {
+      event.preventDefault()
+      this.props.history.push('/main')
+    }
   
     render() {    
       return (
-        <h1>{ this.state.heading }&nbsp;
-          <span>{ this.state.text }</span>
-          <span id="cursor"/>
-        </h1>
+        <div className="home">
+          <div className="typer">
+            <h1>{this.state.heading}&nbsp;
+            <span>{this.state.text}</span>
+            <span id="cursor" />
+            </h1>
+            <button className="goToMain" onClick={this.handleGoMain}></button>
+          </div>
+        </div>
       );
       
     }
   }
 
 
-  export default Typer
+  export default withRouter(Typer)

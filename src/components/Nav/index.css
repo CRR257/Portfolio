@@ -1,0 +1,84 @@
+.hoverzone {
+	padding: -10px;
+	margin: 0;
+	list-style: none;
+    position : abolsute;
+    height: 0;
+}
+
+div.hoverzone p {
+    float: left;
+    list-style: none;
+    width: 100%;
+    margin: unset;
+    height: 30px;
+    background-color: #000051;
+}
+
+div.hoverzone p ul {
+    position: absolute;
+    width: 100%;
+    left: -999em;
+    display: flex;
+    flex-direction: row;
+    height: 74px;
+    background-color: #03036e;
+    top: 0;
+    padding: unset;
+    margin: unset;
+}
+
+li {
+    list-style: none;
+    font-size: 16px;
+    color: white; 
+}
+
+div.hoverzone p:hover ul {
+    left: auto;
+}
+
+li:hover {
+    color: #a00000;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.fab {
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 0.3px;
+}
+
+a {
+    padding-top: 1.5rem;
+    padding-left: 4rem;
+}
+
+@media screen and (max-width: 400px){
+   li {
+       padding: 1rem 2rem;
+   }
+
+   a {
+    padding-top: 0.5rem;
+    }
+
+}
+
+@media screen and (min-width: 400px) and (max-width: 700px){
+    li {
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1500px){
+    li {
+        padding: 2rem 0;
+    }
+
+    div.hoverzone p ul {
+       justify-content: space-around;
+    }
+}

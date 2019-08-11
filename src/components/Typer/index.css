@@ -1,0 +1,76 @@
+.home {
+    background-image: url(../../img/vineyard3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: auto;
+    min-height: 100%;
+    padding-bottom: 2em;
+    height: -webkit-fill-available;
+}
+  
+
+.home-cursor {
+    border-left: .1em solid black;
+    animation: blink .7s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.goToMain {
+    position: fixed;
+    bottom: 20px;
+    right: 60px;
+}
+
+@media screen and (max-width: 400px){
+    .home-heading {
+        display: flex;
+        padding: 3rem 0 2rem 3rem;
+        justify-content: left;
+        font-size: 2rem;
+    }
+      
+    .home-text {
+        display: flex;
+        justify-content: center;
+        font-size: 1.8rem;
+        padding: 0 3rem;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 700px){
+    .home-heading {
+        display: flex;
+        padding: 4rem 0 2rem 4rem;
+        justify-content: left;
+        font-size: 3rem;
+    }
+      
+    .home-text {
+        display: flex;
+        justify-content: center;
+        font-size: 2.5rem;
+        padding: 0 4rem;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1500px){
+    .home-heading {
+        display: flex;
+        padding: 6rem 0 2rem 16rem;
+        justify-content: left;
+        font-size: 4rem;
+    }
+      
+    .home-text {
+        display: flex;
+        justify-content: center;
+        font-size: 3.5rem;
+    }
+}

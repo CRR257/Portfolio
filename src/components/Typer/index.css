@@ -1,12 +1,4 @@
-.home {
-  height: -webkit-fill-available;
-  color: rgba(255, 255, 255, 0.938);
-  background-image: url("../../img/computer.jpg");
-  background-size: cover;
-  opacity: 0.91;
-  filter: grayscale(57%);
-  height: 50rem;
-}
+
 
 @keyframes blink {
   50% {
@@ -15,6 +7,15 @@
 }
 
 @media screen and (max-width: 400px) {
+  .home {
+    height: -webkit-fill-available;
+    color: rgba(255, 255, 255, 0.938);
+    background-image: url("../../img/computer.jpg");
+    background-size: cover;
+    opacity: 0.91;
+    filter: grayscale(57%);
+    height: 40rem;
+  }
   .home-heading {
     display: flex;
     padding: 10rem 0 1rem 3rem;
@@ -41,6 +42,15 @@
 }
 
 @media screen and (min-width: 400px) and (max-width: 700px) {
+  .home {
+    height: -webkit-fill-available;
+    color: rgba(255, 255, 255, 0.938);
+    background-image: url("../../img/computer.jpg");
+    background-size: cover;
+    opacity: 0.91;
+    filter: grayscale(57%);
+    height: 45rem;
+  }
   .home-heading {
     display: flex;
     padding: 13rem 0 3rem 4rem;
@@ -57,13 +67,21 @@
 }
 
 @media screen and (min-width: 700px) and (max-width: 900px) {
+  .home {
+    height: -webkit-fill-available;
+    color: rgba(255, 255, 255, 0.938);
+    background-image: url("../../img/computer.jpg");
+    background-size: cover;
+    opacity: 0.91;
+    filter: grayscale(57%);
+    height: 45rem;
+  }
   .home-heading {
     display: flex;
     padding: 10rem 0 2rem 9rem;
     justify-content: left;
     font-size: 4rem;
   }
-
   .home-text {
     display: flex;
     justify-content: left;
@@ -78,7 +96,16 @@
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 900px) and (max-width: 2000px) {
+  .home {
+    height: -webkit-fill-available;
+    color: rgba(255, 255, 255, 0.938);
+    background-image: url("../../img/computer.jpg");
+    background-size: cover;
+    opacity: 0.91;
+    filter: grayscale(57%);
+    height: 45rem;
+  }
   .home-heading {
     display: flex;
     padding: 11rem 0 2rem 16rem;

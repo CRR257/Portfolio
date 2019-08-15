@@ -20,6 +20,7 @@ a {
     margin: unset;
     color: black;
     cursor: pointer;
+    margin-right: 1rem;
 }
 
 .project {
@@ -108,7 +109,7 @@ a {
     }
 }
 
-@media screen and (min-width: 700px) and (max-width: 1500px){
+@media screen and (min-width: 700px) and (max-width: 2000px){
 
     span {
         padding: 25px;

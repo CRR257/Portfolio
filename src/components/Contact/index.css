@@ -19,19 +19,6 @@ h1 {
     margin: unset;
 }
 
-a:hover {
-    font-size: 18px;
-}
-
-.fab {
-    background-color: white;
-    padding: 0.5rem;
-}
-
-a {
-    margin-right: 1rem;
-}
-
 span {
     padding: unset;
     margin: unset

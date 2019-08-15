@@ -3,6 +3,7 @@ import Nav from '../Nav/index';
 import "./index.css";
 
 class Contact extends React.Component {
+
     render() {
       return (
         <div className="contact" id={'contact'}>

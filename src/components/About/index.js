@@ -20,17 +20,17 @@ class About extends React.Component {
           <img src={me} alt="me" />
           <span>
             Hi, my name is Clara and I'm a frontend developer, but before that,
-            I studied food nutrition and food and cience
+            I studied food nutrition and food and science
             technology. I worked in food laboratories for almost 6 years and I
             liked it a lot (I loved to see growing the microorganisms, their
-            shapes and colors depen on the growth media formulation).
+            shapes and colors depending on the growth media formulation).
             <br />
             But, one day, a special person showed me something that I liked more
-            than microorganisms..it was coding!. After few little Js
-            declarations and consoles.log, few months later I decided to leave
-            my job, my confort zone, be brave and do a bootcamp. There I learned
-            Js, HTML, CSS, React, Node, testing and MongoDb, and here I'm,
-            loving code in my free time and loving beeing a developer.
+            than microorganisms... Coding!. After few little JS
+            declarations and consoles.log(), few months later I decided to leave
+            my job, my confort zone, be brave and start a bootcamp. There I learned
+            JS, HTML, CSS, React, Node, testing and MongoDB, and here I am,
+            loving to code in my free time and being a developer.
           </span>
         </div>
         <h1>My hobbies</h1>
@@ -38,7 +38,7 @@ class About extends React.Component {
           <img src={gala} alt="gala" />
           <span>
             My hobbies are going to the gym (I'm an endorphins addict (and a caffeine addict, too), being
-            with my friends and family, and of course, coding with my cat!
+            with my friends and family, and of course, coding with my furry supurrvisor (aka my cat)!
           </span>
         </div>
         <h1>My projects</h1>

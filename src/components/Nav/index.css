@@ -14,11 +14,6 @@ li {
 
 li:hover {
   text-decoration-line: underline;
-  font-size: 18px;
-}
-
-a:hover {
-  font-size: 18px;
 }
 
 .fab {
@@ -166,7 +161,9 @@ a:hover {
 
   a {
     margin-left: unset;
+    margin-right: 1rem;
   }
+
   .nav-icon {
     margin-top: 15px;
     display: flex;

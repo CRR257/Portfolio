@@ -1,5 +1,10 @@
 body {
   font-family: 'Cambay', sans-serif;
   margin: unset; 
+  padding: unset;
+  height:100%;
 }
 
+html {
+  height:100%;
+} 

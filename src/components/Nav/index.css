@@ -1,84 +1,218 @@
-.hoverzone {
-	padding: -10px;
-	margin: 0;
-	list-style: none;
-    position : abolsute;
-    height: 0;
-}
-
-div.hoverzone p {
-    float: left;
-    list-style: none;
-    width: 100%;
-    margin: unset;
-    height: 30px;
-    background-color: #000051;
-}
-
-div.hoverzone p ul {
-    position: absolute;
-    width: 100%;
-    left: -999em;
-    display: flex;
-    flex-direction: row;
-    height: 74px;
-    background-color: #03036e;
-    top: 0;
-    padding: unset;
-    margin: unset;
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin: unset;
 }
 
 li {
-    list-style: none;
-    font-size: 16px;
-    color: white; 
-}
-
-div.hoverzone p:hover ul {
-    left: auto;
+  list-style: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  margin: 0px 0 9px 0;
 }
 
 li:hover {
-    color: #a00000;
-    font-size: 18px;
-    font-weight: 600;
-    cursor: pointer;
+  text-decoration-line: underline;
+  font-size: 18px;
+}
+
+a:hover {
+  font-size: 18px;
 }
 
 .fab {
+  background-color: white;
+  padding: 0.5rem;
+}
+
+.header {
+  background-color: #3c3c3c !important;
+  border-bottom: 1px solid white;
+  height: 4rem;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  text-decoration: none;
+  margin: 5px 3px 0px 2px;
+  color: white;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.header .menu {
+  max-height: 0;
+  background-color: #3c3c3c;
+}
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 15px 9px;
+  margin-bottom: 13px;
+  border-radius: 3px;
+  position: relative;
+  top: 6px;
+  right: 10px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: white;
+  border-radius: 0.5px;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+  padding: 6rem 1rem 1.5rem 1rem;
+  border-bottom: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  width: 7rem;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+@media (max-width: 300px) {
+  .header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+    top: -8px;
+    left: -7px;
+  }
+
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: unset;
+    margin-bottom: 13px;
+    border-radius: 3px;
+    position: relative;
+    top: 6px;
+    right: 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
     background-color: white;
-    padding: 0.5rem;
-    border-radius: 0.3px;
+  }
+
+  a {
+    margin-left: unset;
+  }
+  .nav-icon {
+    margin-top: 15px;
+    display: flex;
+  }
+
+  li {
+    list-style: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    margin: 0px 0 9px 0;
+  }
 }
 
-a {
-    padding-top: 1.5rem;
-    padding-left: 4rem;
-}
-
-@media screen and (max-width: 400px){
-   li {
-       padding: 1rem 2rem;
-   }
-
-   a {
-    padding-top: 0.5rem;
-    }
-
-}
-
-@media screen and (min-width: 400px) and (max-width: 700px){
-    li {
-        padding: 2rem 4rem;
-    }
-}
-
-@media screen and (min-width: 700px) and (max-width: 1500px){
-    li {
-        padding: 2rem 0;
-    }
-
-    div.hoverzone p ul {
-       justify-content: space-around;
-    }
+@media (min-width: 700px) {
+  .header li {
+    padding: 16px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+    width: 100%;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+  .header {
+    display: flex;
+    justify-content: space-evenly;
+    left: 0;
+    top: 0;
+  }
+  a {
+    padding: 13px 30px;
+    color: white;
+  }
+  .nav-icon {
+    margin-top: 15px;
+    display: flex;
+  }
+  li {
+    list-style: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    margin: unset;
+  }
 }

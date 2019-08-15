@@ -1,10 +1,8 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-// import Main from './Main';
 import './index.css';
 
 class Typer extends React.Component {
-
 
   constructor(props) {
     super(props);
@@ -15,7 +13,7 @@ class Typer extends React.Component {
       loopNum: 0,
       typingSpeed: 150,
       heading: "Hi,",
-      dataText: ["my name is Clara", "I'm a developer, ", "I love to make web pages"]
+      dataText: ["my name is Clara", "I'm a developer, ", "I'm a committed developer, ", "I love to make web pages"]
     }
   }
 
@@ -50,24 +48,20 @@ class Typer extends React.Component {
 
   };
 
- 
   render() {
     return (
-      <div className="home">
+      <div className="home" id={'home'}>
         <div className="home-heading">
           <span>{this.state.heading}</span>
           </div>
           <div className="home-text">
           <span>{this.state.text}</span>
-          <span className="home-cursor">
-          </span>
-       
+          <span className="home-cursor"></span>
         </div>
       </div>
     );
 
   }
 }
-
 
 export default withRouter(Typer)

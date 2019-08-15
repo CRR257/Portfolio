@@ -1,22 +1,26 @@
-import React from 'react';
-import Nav from '../Nav/index';
-// import clara from '../img/';
-import Typer from '../Typer/index';
-// import Main from './Main';
-
+import React from "react";
+import Nav from "../Nav/index";
+import Typer from "../Typer/index";
+import About from "../About/index";
+import Contact from "../Contact/index";
 
 
 class HomePage extends React.Component {
+  
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
 
-
-    render() {
-        return (
-            <div>
-                <Nav/>
-                <Typer/>
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div>
+        <Nav />
+        <Typer />
+        <About />
+        <Contact />
+      </div>
+    );
+  }
 }
 
 export default HomePage;

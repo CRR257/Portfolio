@@ -13,10 +13,10 @@ class About extends React.Component {
 
   render() {
     return (
-      <div className="about">
+      <div className="about" id={'about'}>
       <Nav />
         <h1>My story</h1>
-        <div className="content"  id={'about'}>
+        <div className="content">
           <img src={me} alt="me" />
           <span>
             Hi, my name is Clara and I'm a frontend developer, but before that,

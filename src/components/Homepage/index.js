@@ -3,6 +3,7 @@ import Nav from "../Nav/index";
 import Typer from "../Typer/index";
 import About from "../About/index";
 import Contact from "../Contact/index";
+import Footer from '../Footer/index';
 
 
 class HomePage extends React.Component {
@@ -18,6 +19,7 @@ class HomePage extends React.Component {
         <Typer />
         <About />
         <Contact />
+        <Footer />
       </div>
     );
   }

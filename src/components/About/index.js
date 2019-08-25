@@ -13,8 +13,9 @@ class About extends React.Component {
 
   render() {
     return (
-      <div className="about" id={'about'}>
+      <div>
       <Nav />
+        <div className="about" id={'about'}>
         <h1>My story</h1>
         <div className="content">
           <img src={me} alt="me" />
@@ -35,7 +36,7 @@ class About extends React.Component {
         </div>
         <h1>My hobbies</h1>
         <div className="content">
-          <img src={gala} alt="gala" />
+          <img className="gala" src={gala} alt="gala" />
           <span>
             My hobbies are going to the gym (I'm an endorphins addict (and a caffeine addict, too), being
             with my friends and family, and of course, coding with my furry supurrvisor (aka my cat)!
@@ -43,7 +44,7 @@ class About extends React.Component {
         </div>
         <h1>My projects</h1>
         <div className="content-projects">
-          <a target="blank" href="http://st-james-vet.surge.sh" className="project">St James Vet</a>
+          <a target="_blank" href="http://st-james-vet.surge.sh" className="project">St James Vet</a>
           <span>Application to manage owners and pets of a veterinary clinic.</span>
           <span>
           Login:
@@ -53,13 +54,14 @@ class About extends React.Component {
           password: vet
           </span>
           <br/>
-          <a target="blank" href="http://smart-fridge-pro.surge.sh" className="project">Smart fridge</a>
+          <a target="_blank" href="http://smart-fridge-pro.surge.sh" className="project">Smart fridge</a>
           <span>
           Aplication to calculate the amount of calories users need everyday, depends on their gender, 
           age, weight, height and lifestyle(daily exercise).
           </span>
           </div>
-        </div>     
+        </div>  
+        </div>
     );
   }
 }

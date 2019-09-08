@@ -6,14 +6,10 @@ h1 {
 }
 
 a {
-    margin: unset;
     color: black;
     cursor: pointer;
     margin-right: 1rem;
-}
-
-.project {
-    margin: unset;
+    font-size: 20px;
     padding: unset;
 }
 
@@ -22,7 +18,6 @@ a {
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
-    font-size: 19px;
 }
 
 .about {
@@ -42,14 +37,18 @@ img {
 
 span {
     padding: unset;
+    font-size: 19px;
 }
 
-.content-projects {
+.content-project {
     display: flex;
     align-items: left;
     justify-content: center;
     flex-direction: column;
-    font-size: 19px;
+}
+
+.content-project__title {
+    padding: 10px 0;
 }
 
 .gala {
@@ -57,11 +56,14 @@ span {
 }
 
 @media screen and (max-width: 400px){
+
     .content {
         padding: 1rem 1rem !important;
+     
     }
-    .content-projects {
+    .content-project {
         padding: 1rem 1rem;
+     
     }
     span {
         margin: 30px 0 10px 15px;
@@ -82,7 +84,7 @@ span {
     .content {
         padding: 1rem 3rem !important;
     }
-    .content-projects {
+    .content-project {
         padding: 1rem 3rem;
     }
     span {
@@ -98,7 +100,7 @@ span {
     }
 }
 
-@media screen and (min-width: 700px) and (max-width: 2000px){
+@media screen and (min-width: 700px) and (max-width: 1024px){
 
     span {
         padding: 25px;
@@ -106,14 +108,14 @@ span {
     .content {
         padding: 1rem 5rem;
     }
-    .content-projects {
-        padding: 1rem 4rem;
+    .content-project {
+        padding: 1rem 5rem;
     }
     img {
         width: 310px;
     }
     .about {
-        padding: 6rem 3rem 9rem 3rem;
+        padding: 6rem 5rem 9rem 5rem;
     }
     .gala {
         width: 600px;
@@ -121,4 +123,67 @@ span {
     }
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1280px){
+
+    span {
+        padding: unset;
+        font-size: 22px;
+    }
+    .content {
+        padding: 1rem 5rem;
+    }
+    .content-project {
+        padding: 1rem 5rem;
+    }
+    .content-project__title {
+        padding: 10px 0;
+        font-size: 20px;
+    }
+    img {
+        width: 350px;
+        padding-bottom: 4rem;
+    }
+    .about {
+        padding: 6rem 9rem 9rem 9rem;
+    }
+    .gala {
+        width: 620px;
+        padding-bottom: 4rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    span {
+        padding: unset;
+        font-size: 21px;
+    }
+    .content {
+        padding: 2rem 5rem;
+    }
+    .content-project {
+        padding: 1rem 5rem;
+    }
+    .content-project__title {
+        padding: 18px 0;
+        font-size: 21px;
+    }
+    img {
+        width: 350px;
+        padding-bottom: 4rem;
+    }
+    .about {
+        padding: 6rem 9rem 9rem 9rem;
+    }
+    .gala {
+        width: 620px;
+        padding-bottom: 4rem;
+    }
+}
+
+
+
+a:hover {
+    font-weight: bold;
+}
 

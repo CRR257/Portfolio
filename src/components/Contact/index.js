@@ -15,10 +15,10 @@ class Contact extends React.Component {
           <br />
           <span>City: Barcelona</span>
           <br />
-          <span>
+          <span className="contact-icons">
           <br />
-            <a target="_blank" href="https://github.com/CRR257"><i className="fab fa-github"></i></a>
-            <a target="_blank" href="https://www.linkedin.com/in/clara-ruf%C3%AD-rull-ab16832b/"><i className="fab fa-linkedin-in"></i></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/CRR257"><i className="fab fa-github"></i></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/clara-ruf%C3%AD-rull-ab16832b/"><i className="fab fa-linkedin-in"></i></a>
           </span>
           </div>
         </div>

@@ -2,6 +2,15 @@ import React from "react";
 import Nav from "../Nav/index";
 import me from "../../img/clara.jpg";
 import gala from "../../img/gala.jpg";
+import js from "../../img/js.jpg";
+import express from "../../img/express.png";
+import firebase from "../../img/firebase.png";
+import graphql from "../../img/graphql.png";
+import heroku from "../../img/heroku.png";
+import mongo from "../../img/mongo.png";
+import node from "../../img/node.png";
+import react from "../../img/react.jpg";
+import apolloclient from "../../img/apolloclient.png";
 import "./index.css";
 
 
@@ -44,26 +53,51 @@ class About extends React.Component {
         </div>
         <h1>My projects</h1>
         <div className="content-project">
-            <a target="_blank" rel="noopener noreferrer" href="http://st-james-vet.surge.sh" className="content-project__title">St James Vet</a>
-            <span>Application to manage owners and pets of a veterinary clinic.</span>
-            <span>
-              Login:
-              <br/>
-              email: vet@stjames.com 
-              <br/>
-              password: vet
-            </span>
-        </div>
-          <div className="content-project">
-            <br/>
-            <a target="_blank" rel="noopener noreferrer" href="http://smart-fridge-pro.surge.sh" className="content-project__title">Smart fridge</a>
-            <span>
-            Aplication to calculate the amount of calories users need everyday, depends on their gender, 
-            age, weight, height and lifestyle(daily exercise).
-            </span>
+          <br/>
+          <a target="_blank" rel="noopener noreferrer" href="http://smart-fridge-pro.surge.sh" className="content-project__title">Smart fridge</a>
+          <span>
+          Aplication to calculate the amount of calories users need everyday, depends on their gender, 
+          age, weight, height and lifestyle(daily exercise).
+          </span>
+          <div className="content-project__technologies">
+            <img className="technologie tooltip" src={js} alt="" />   
+            <img className="technologie tooltip" src={react} alt="" />   
+            <img className="technologie tooltip" src={heroku} alt="" />
           </div>
-        </div> 
+        </div>
+        <div className="content-project">
+          <a target="_blank" rel="noopener noreferrer" href="http://st-james-vet.surge.sh" className="content-project__title">St James Vet</a>
+          <span>Application to manage owners and pets of a veterinary clinic.</span>
+          <span>
+            Login:
+            <br/>
+            email: vet@stjames.com 
+            <br/>
+            password: vet
+          </span>
+          <div className="content-project__technologies">
+            <img className="technologie" src={js} alt="" />
+            <img className="technologie" src={react} alt="" />
+            <img className="technologie" src={express} alt="" />
+            <img className="technologie" src={mongo} alt="" />
+            <img className="technologie" src={node} alt="" />
+            <img className="technologie" src={heroku} alt="" />
+          </div>
+        </div>
+      
+        <div className="content-project">
+          <a target="_blank" rel="noopener noreferrer" href="https://rickmortyweb.web.app/" className="content-project__title">Rick & Morty</a>
+          <span>Web to show information about some Rick and Morty's characters.User can search by character's name.</span>
+          <div className="content-project__technologies">
+            <img className="technologie" src={js} alt="" />
+            <img className="technologie" src={react} alt="" />
+            <img className="technologie" src={graphql} alt="" />
+            <img className="technologie" src={apolloclient} alt="" />
+            <img className="technologie" src={firebase} alt="" />
+          </div>
+        </div>
       </div> 
+      </div>    
     );
   }
 }

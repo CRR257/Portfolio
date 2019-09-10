@@ -43,6 +43,7 @@ class About extends React.Component {
               loving to code in my free time and being a developer.
             </span>
           </div>
+        <hr />
         <h1>My hobbies</h1>
         <div className="content">
           <img className="gala" src={gala} alt="gala" />
@@ -51,9 +52,9 @@ class About extends React.Component {
             with my friends and family, and of course, coding with my furry supurrvisor (aka my cat)!
           </span>
         </div>
+        <hr />
         <h1>My projects</h1>
         <div className="content-project">
-          <br/>
           <a target="_blank" rel="noopener noreferrer" href="http://smart-fridge-pro.surge.sh" className="content-project__title">Smart fridge</a>
           <span>
           Aplication to calculate the amount of calories users need everyday, depends on their gender, 
@@ -68,7 +69,7 @@ class About extends React.Component {
         <div className="content-project">
           <a target="_blank" rel="noopener noreferrer" href="http://st-james-vet.surge.sh" className="content-project__title">St James Vet</a>
           <span>Application to manage owners and pets of a veterinary clinic.</span>
-          <span>
+          <span className="content-project__credentials">
             Login:
             <br/>
             email: vet@stjames.com 
@@ -84,7 +85,6 @@ class About extends React.Component {
             <img className="technologie" src={heroku} alt="" />
           </div>
         </div>
-      
         <div className="content-project">
           <a target="_blank" rel="noopener noreferrer" href="https://rickmortyweb.web.app/" className="content-project__title">Rick & Morty</a>
           <span>Web to show information about some Rick and Morty's characters.User can search by character's name.</span>

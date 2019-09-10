@@ -81,6 +81,19 @@ span {
     padding: unset;
 }
 
+.content-project__technologies {
+    display: flex;
+    flex-wrap: wrap;
+    width: 120%;
+}
+
+.technologie {
+    width: 70px;
+    border-radius: 15px;
+    margin: 30px 30px 0 0;
+    padding: unset;
+}
+
 .gala {
     border-radius: 5px;
 }

@@ -62,13 +62,11 @@ span {
 .content-project__technologies {
     display: flex;
     flex-wrap: wrap;
-    width: 120%;
 }
 
 .content-project__credentials {
     background-color: #949494;
     font-size: 15px;
-    width: 300px;
     border-radius: 7px;
     padding: 5px 9px;
     margin: 9px 0;
@@ -84,7 +82,6 @@ span {
 .content-project__technologies {
     display: flex;
     flex-wrap: wrap;
-    width: 120%;
 }
 
 .technologie {
@@ -96,6 +93,25 @@ span {
 
 .gala {
     border-radius: 5px;
+}
+@media screen and (max-width: 400px){
+    
+    .content {
+        padding: 1rem 1rem !important;
+    }
+    img {
+        width: 200px;
+    } 
+    .gala {
+        width: 250px;
+        padding-bottom: 1rem;
+    } 
+    .about {
+        padding: 1rem;
+    }
+    .content-project {
+        padding: 1rem;
+    } 
 }
 
 @media screen and (min-width: 400px) and (max-width: 700px){

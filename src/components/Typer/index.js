@@ -60,7 +60,6 @@ class Typer extends React.Component {
         </div>
       </div>
     );
-
   }
 }
 

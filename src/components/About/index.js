@@ -7,7 +7,7 @@ import express from "../../img/express.png";
 import firebase from "../../img/firebase.png";
 import graphql from "../../img/graphql.png";
 import heroku from "../../img/heroku.png";
-import mongo from "../../img/mongo.png";
+import mongo from "../../img/mongo.jpeg";
 import node from "../../img/node.png";
 import react from "../../img/react.jpg";
 import apolloclient from "../../img/apolloclient.png";
@@ -60,10 +60,21 @@ class About extends React.Component {
           Aplication to calculate the amount of calories users need everyday, depends on their gender, 
           age, weight, height and lifestyle(daily exercise).
           </span>
+      
           <div className="content-project__technologies">
-            <img className="technologie tooltip" src={js} alt="" />   
+          <div className="tooltip">
+            <img className="technologie tooltip" src={js} alt="" /> 
+            <span class="tooltiptext">JS</span>
+          </div>
+          <div className="tooltip">
             <img className="technologie tooltip" src={react} alt="" />   
-            <img className="technologie tooltip" src={heroku} alt="" />
+            <span class="tooltiptext">ReactJS</span>
+          </div>
+          <div className="tooltip">
+            <img className="technologie tooltip" src={heroku} alt="" />  
+            <span class="tooltiptext">Heroku</span>
+          </div>
+      
           </div>
         </div>
         <div className="content-project">
@@ -77,23 +88,56 @@ class About extends React.Component {
             password: vet
           </span>
           <div className="content-project__technologies">
-            <img className="technologie" src={js} alt="" />
-            <img className="technologie" src={react} alt="" />
-            <img className="technologie" src={express} alt="" />
-            <img className="technologie" src={mongo} alt="" />
-            <img className="technologie" src={node} alt="" />
-            <img className="technologie" src={heroku} alt="" />
+            <div className="tooltip">
+              <img className="technologie tooltip" src={js} alt="" /> 
+              <span class="tooltiptext">JS</span>
+            </div>
+            <div className="tooltip">
+              <img className="technologie" src={react} alt="" />
+              <span class="tooltiptext">ReactJS</span>
+            </div>
+            <div className="tooltip">
+              <img className="technologie" src={express} alt="" />
+              <span class="tooltiptext">ExpressJS</span>
+            </div>
+            <div className="tooltip">
+              <img className="technologie" src={mongo} alt="" />
+              <span class="tooltiptext">MongoDB</span>
+            </div>
+            <div className="tooltip">
+              <img className="technologie" src={node} alt="" />
+              <span class="tooltiptext">NodeJS</span>
+            </div>
+            <div className="tooltip">
+              <img className="technologie" src={heroku} alt="" />
+              <span class="tooltiptext">Heroku</span>
+            </div>
           </div>
         </div>
         <div className="content-project">
           <a target="_blank" rel="noopener noreferrer" href="https://rickmortyweb.web.app/" className="content-project__title">Rick & Morty</a>
           <span>Web to show information about some Rick and Morty's characters.User can search by character's name.</span>
           <div className="content-project__technologies">
-            <img className="technologie" src={js} alt="" />
-            <img className="technologie" src={react} alt="" />
-            <img className="technologie" src={graphql} alt="" />
-            <img className="technologie" src={apolloclient} alt="" />
-            <img className="technologie" src={firebase} alt="" />
+            <div className="tooltip">
+              <img className="technologie" src={js} alt="" />
+              <span class="tooltiptext">JS</span>
+            </div>
+            <div className="tooltip">
+              <img className="technologie" src={react} alt="" />
+              <span class="tooltiptext">ReactJS</span>
+            </div>
+            <div className="tooltip">
+              <img className="technologie" src={graphql} alt="" />
+              <span class="tooltiptext">GraphQL</span>
+            </div>
+            <div className="tooltip">
+              <img className="technologie" src={apolloclient} alt="" />
+              <span class="tooltiptext">Apollo Client</span>
+            </div>
+            <div className="tooltip">
+              <img className="technologie" src={firebase} alt="" />
+              <span class="tooltiptext">Firebase</span>
+            </div>     
           </div>
         </div>
       </div> 

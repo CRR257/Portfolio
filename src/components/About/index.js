@@ -79,13 +79,12 @@ function about() {
         <div className="content-project">
           <a target="_blank" rel="noopener noreferrer" href="http://st-james-vet.surge.sh" className="content-project__title">St James Vet</a>
           <span>Application to manage owners and pets of a veterinary clinic.</span>
-          <span className="content-project__credentials">
-            <span className="content-project__credentials--title">Login:</span>
-            <br/>
+          <div className="content-project__credentials">
+            <div className="content-project__credentials--title">Login:</div>
             email: vet@stjames.com 
             <br/>
             password: vet
-          </span>
+          </div>
           <div className="content-project__technologies">
             <div className="tooltip">
               <img className="technologie tooltip" src={js} alt="" /> 

@@ -5,14 +5,8 @@ import About from "../About/index";
 import Contact from "../Contact/index";
 import Footer from '../Footer/index';
 
+const homePage = props => {
 
-class HomePage extends React.Component {
-  
-  componentDidMount() {
-    window.scrollTo(0, 0)
-  }
-
-  render() {
     return (
       <div>
         <Nav />
@@ -23,6 +17,5 @@ class HomePage extends React.Component {
       </div>
     );
   }
-}
 
-export default HomePage;
+export default homePage;

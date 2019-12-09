@@ -155,6 +155,9 @@ a {
     top: 13px;
     right: 16px;
   }
+  .header {
+    height: 3rem;
+  }
 }
 
 @media (min-width: 700px) {

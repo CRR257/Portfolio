@@ -1,12 +1,11 @@
-
-import React, { Fragment } from 'react'
-import { BrowserRouter as Router, Route } from  'react-router-dom'
+import React, { Fragment } from 'react';
+import { BrowserRouter as Router, Route } from  'react-router-dom';
 
 import HomePage from '../Homepage/index';
 import About from '../About/index';
 import Contact from '../Contact/index';
 
-const App = () => {
+const app = () => {
     return (
         <Router>
             <Fragment>
@@ -18,4 +17,4 @@ const App = () => {
     )
 }
 
-export default App
+export default app;

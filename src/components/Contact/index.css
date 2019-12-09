@@ -20,13 +20,13 @@ h1 {
     border-top: 1px solid white;
     background-color: #706f6f;
     color: white;
-    padding: 4rem 3rem;
     height: -webkit-fill-available;
 }
 
 .contact-icons {
     display: flex;
     justify-content: center;
+    padding-top: 20px;
 }
 
 .content {
@@ -39,6 +39,9 @@ h1 {
     .content {
         padding: 1rem 1rem !important;
     }
+    .contact {
+        padding: 4rem 3rem;
+    }
     span {
         padding: unset;
         margin: unset
@@ -49,30 +52,31 @@ h1 {
     .contact {
         padding: 6rem 3rem;
     }
-    
     .content {
         padding: 1rem 3rem;
     }
     span {
         padding: unset;
         margin: unset
-    }    
+    }
+    .contact-icons {
+        padding-top: unset;
+    }     
 }
 
 @media screen and (min-width: 700px){
     .contact {
         padding: 6rem 3rem;
-    }
-    
+    }  
     .content {
-        padding: 2rem 5rem 5rem 5rem;
+        padding: 2rem 5rem 4rem 5rem;
     }
     span {
         padding: unset;
         margin: unset
     }
     .contact-icons {
-        padding-top: 20px
+        padding-top: 20px;
     }    
 }
 

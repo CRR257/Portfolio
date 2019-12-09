@@ -63,4 +63,4 @@ class Typer extends React.Component {
   }
 }
 
-export default withRouter(Typer)
+export default withRouter(Typer);

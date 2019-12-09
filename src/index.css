@@ -5,6 +5,7 @@ body {
   height:100%;
   background-color: #706f6f;
   overflow-y:scroll;
+  letter-spacing: 0.3px;
 }
 
 html {

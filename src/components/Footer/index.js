@@ -2,13 +2,13 @@ import React from "react";
 import "./index.css";
 
 
-function Footer() {
+function footer() {
   
-    return (
-      <div className="footer">
-          <h3>by  CRR257</h3>
-      </div>
-    );
+  return (
+    <div className="footer">
+        <h3>by  CRR257<i class="fas fa-paw"></i></h3>
+    </div>
+  );
 }
 
-export default Footer;
+export default footer;

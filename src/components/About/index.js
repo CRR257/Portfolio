@@ -11,16 +11,12 @@ import mongo from "../../img/mongo.jpeg";
 import node from "../../img/node.png";
 import react from "../../img/react.jpg";
 import apolloclient from "../../img/apolloclient.png";
+import Cv from '../../cv/cv_clara_rufi.pdf';
 import "./index.css";
 
 
-class About extends React.Component {
+function about() {
 
-  componentDidMount() {
-    window.scrollTo(0, 0)
-  }
-
-  render() {
     return (
       <div>
       <Nav />
@@ -42,6 +38,9 @@ class About extends React.Component {
               JS, HTML, CSS, React, Node, testing and MongoDB, and here I am,
               loving to code in my free time and being a developer.
             </span>
+            <div>
+            <a href={Cv} target="blank" className="cv">My Cv</a>
+            </div>
           </div>
         <hr />
         <h1>My hobbies</h1>
@@ -64,15 +63,15 @@ class About extends React.Component {
           <div className="content-project__technologies">
           <div className="tooltip">
             <img className="technologie tooltip" src={js} alt="" /> 
-            <span class="tooltiptext">JS</span>
+            <span className = "tooltiptext">JS</span>
           </div>
           <div className="tooltip">
             <img className="technologie tooltip" src={react} alt="" />   
-            <span class="tooltiptext">ReactJS</span>
+            <span className = "tooltiptext">ReactJS</span>
           </div>
           <div className="tooltip">
             <img className="technologie tooltip" src={heroku} alt="" />  
-            <span class="tooltiptext">Heroku</span>
+            <span className = "tooltiptext">Heroku</span>
           </div>
       
           </div>
@@ -81,7 +80,7 @@ class About extends React.Component {
           <a target="_blank" rel="noopener noreferrer" href="http://st-james-vet.surge.sh" className="content-project__title">St James Vet</a>
           <span>Application to manage owners and pets of a veterinary clinic.</span>
           <span className="content-project__credentials">
-            Login:
+            <span className="content-project__credentials">Login:</span>
             <br/>
             email: vet@stjames.com 
             <br/>
@@ -90,27 +89,27 @@ class About extends React.Component {
           <div className="content-project__technologies">
             <div className="tooltip">
               <img className="technologie tooltip" src={js} alt="" /> 
-              <span class="tooltiptext">JS</span>
+              <span className = "tooltiptext">JS</span>
             </div>
             <div className="tooltip">
               <img className="technologie" src={react} alt="" />
-              <span class="tooltiptext">ReactJS</span>
+              <span className = "tooltiptext">ReactJS</span>
             </div>
             <div className="tooltip">
               <img className="technologie" src={express} alt="" />
-              <span class="tooltiptext">ExpressJS</span>
+              <span className = "tooltiptext">ExpressJS</span>
             </div>
             <div className="tooltip">
               <img className="technologie" src={mongo} alt="" />
-              <span class="tooltiptext">MongoDB</span>
+              <span className = "tooltiptext">MongoDB</span>
             </div>
             <div className="tooltip">
               <img className="technologie" src={node} alt="" />
-              <span class="tooltiptext">NodeJS</span>
+              <span className = "tooltiptext">NodeJS</span>
             </div>
             <div className="tooltip">
               <img className="technologie" src={heroku} alt="" />
-              <span class="tooltiptext">Heroku</span>
+              <span className = "tooltiptext">Heroku</span>
             </div>
           </div>
         </div>
@@ -120,23 +119,23 @@ class About extends React.Component {
           <div className="content-project__technologies">
             <div className="tooltip">
               <img className="technologie" src={js} alt="" />
-              <span class="tooltiptext">JS</span>
+              <span className = "tooltiptext">JS</span>
             </div>
             <div className="tooltip">
               <img className="technologie" src={react} alt="" />
-              <span class="tooltiptext">ReactJS</span>
+              <span className = "tooltiptext">ReactJS</span>
             </div>
             <div className="tooltip">
               <img className="technologie" src={graphql} alt="" />
-              <span class="tooltiptext">GraphQL</span>
+              <span className = "tooltiptext">GraphQL</span>
             </div>
             <div className="tooltip">
               <img className="technologie" src={apolloclient} alt="" />
-              <span class="tooltiptext">Apollo Client</span>
+              <span className = "tooltiptext">Apollo Client</span>
             </div>
             <div className="tooltip">
               <img className="technologie" src={firebase} alt="" />
-              <span class="tooltiptext">Firebase</span>
+              <span className = "tooltiptext">Firebase</span>
             </div>     
           </div>
         </div>
@@ -144,6 +143,6 @@ class About extends React.Component {
       </div>    
     );
   }
-}
 
-export default About;
+
+export default about;

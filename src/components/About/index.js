@@ -80,7 +80,7 @@ function about() {
           <a target="_blank" rel="noopener noreferrer" href="http://st-james-vet.surge.sh" className="content-project__title">St James Vet</a>
           <span>Application to manage owners and pets of a veterinary clinic.</span>
           <span className="content-project__credentials">
-            <span className="content-project__credentials">Login:</span>
+            <span className="content-project__credentials--title">Login:</span>
             <br/>
             email: vet@stjames.com 
             <br/>

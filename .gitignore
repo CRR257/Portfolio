@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+/public/skypeforlinux-64.rpm
 
 # testing
 /coverage

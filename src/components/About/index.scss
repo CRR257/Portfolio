@@ -1,0 +1,169 @@
+h1 {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0 2rem 0;
+  margin-top: 3rem;
+}
+
+a {
+  color: black;
+  cursor: pointer;
+  margin-right: 1rem;
+  font-size: 20px;
+  padding: unset;
+}
+
+hr {
+  width: 40%;
+  height: 1px;
+  background: black;
+  background: -webkit-gradient(
+    linear,
+    0 0,
+    100% 0,
+    from(white),
+    to(white),
+    color-stop(50%, black)
+  );
+}
+
+.about {
+  border-top: 1px solid white;
+  background-color: #7d7d7d;
+  color: white;
+  &-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  &-container{
+    color: white;
+    width: 80%;
+    margin: 5rem auto;
+  }
+}
+
+img {
+  border-radius: 5px;
+  padding-bottom: 2rem;
+}
+
+span {
+  padding: unset;
+  font-size: 19px;
+}
+
+.gala {
+  border-radius: 5px;
+}
+
+.cv {
+  position: relative;
+  top: 37px;
+  display: flex;
+  justify-content: center;
+  font-size: 26px;
+  padding-bottom: 40px;
+}
+
+@media screen and (max-width: 400px) {
+  .about{
+    padding: 4rem 3rem;
+    &-content {
+      padding: 1rem 1rem !important;
+    }
+  }
+  img {
+    width: 200px;
+  }
+  .gala {
+    width: 250px;
+    padding-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 700px) {
+  img {
+    width: 300px;
+  }
+  .about {
+  padding: 6rem 3rem 9rem 3rem;
+   &-content {
+    padding: 1rem 3rem !important;
+    }
+  }
+  span {
+    display: flex;
+    margin-top: 2rem;
+  }
+  .gala {
+    width: 400px;
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1024px) {
+  span {
+    padding: 25px;
+  }
+  .about{
+    padding: 6rem 5rem 9rem 5rem;
+    &-content {
+      padding: 1rem 5rem;
+    }
+  }
+
+  img {
+    width: 310px;
+  }
+  .gala {
+    width: 600px;
+    padding-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  span {
+    padding: unset;
+  }
+  .about{
+    padding: 6rem 9rem 9rem 9rem;
+    &-content {
+      padding: 2rem 5rem 4rem 5rem;
+    }
+  }
+  img {
+    width: 350px;
+    padding-bottom: 4rem;
+  }
+  .gala {
+    width: 620px;
+    padding-bottom: 4rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  span {
+    padding: unset;
+    font-size: 21px;
+  }
+  .about{
+    padding: 6rem 9rem 9rem 9rem;
+    &-content {
+      padding: 2rem 5rem 4rem 5rem;
+    }
+  }
+  img {
+    width: 350px;
+    padding-bottom: 4rem;
+  }
+  .gala {
+    width: 620px;
+    padding-bottom: 4rem;
+  }
+}
+
+a:hover {
+  font-weight: bold;
+}

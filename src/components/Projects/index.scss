@@ -1,0 +1,120 @@
+span {
+  padding: unset;
+  font-size: 19px;
+}
+
+.projects {
+  width: 80%;
+  margin: 5rem auto;
+  color: white;
+  &-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.text {
+  padding: unset;
+}
+
+.content {
+  &-project {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    &__title {
+      padding: 14px 0;
+      font-family: "Avenir", Arial, Helvetica, sans-serif;
+      font-size: 22px;
+      letter-spacing: 1.1px;
+    }
+    &__technologies {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  border: 1px solid #d2d2d2;
+  padding: 2rem 1rem;
+  margin: 1rem 1rem;
+  &-image {
+    width: 90%;
+    padding-bottom: unset;
+    margin: 1rem auto;
+    border: 1px solid #b5b5b5;
+    border-radius: unset;
+  }
+  &-technology {
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 20px 0;
+    &__image {
+      width: 40px;
+      border-radius: 5px;
+      padding: unset;
+    }
+  }
+  &-title {
+    font-weight: 600;
+    text-decoration: underline;
+    margin: 0 auto;
+  }
+}
+
+ul {
+  padding: unset;
+}
+li {
+  width: 40px;
+  margin: 0 8px;
+}
+a {
+  font-size: 16px;
+  margin-top: 10px;
+}
+@media screen and (max-width: 600px) {
+  .project {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    &-links {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  span {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .project {
+    width: 35%;
+    &-links {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  span {
+    display: flex;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .project {
+    width: 25%;
+    &-links {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  a {
+    font-size: 18px;
+  }
+}

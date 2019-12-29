@@ -1,7 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import './index.css';
+import './index.scss';
 
 const nav = () => {
 
@@ -12,6 +12,7 @@ const nav = () => {
       <ul className="menu">
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/about/#about'>About</Link></li>
+        <li><Link to='/projects/#projects'>Projects</Link></li>
         <li><Link to='/contact/#contact'>Contact</Link></li>
         <div className="nav-icon">
           <a target="_blank" rel="noopener noreferrer" href="https://github.com/CRR257"><i className="fab fa-github"></i></a>

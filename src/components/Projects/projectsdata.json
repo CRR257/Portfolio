@@ -29,7 +29,7 @@
       "imageProject": "portfolio.png",
       "description": "Web about myself and my projects :)",
       "href": "https://clararufidev.web.app/",
-      "github": "https://github.com/CRR257/Portfolio/tree/master/src",
+      "github": "https://github.com/CRR257",
       "images":  ["js.jpg", "react.jpg", "sass.png", "firebase.png"]
     },
     {

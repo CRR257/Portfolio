@@ -25,7 +25,7 @@ function about() {
               declarations and consoles.log(), few months later I decided to leave
               my job, my confort zone, be brave and start a bootcamp. There I learned
               JS, HTML, CSS, React, Node, testing and MongoDB, and here I am,
-              loving to code in my free time and being a developer.
+              loving to code in my free time and being a developer. 
             </span>
             <div>
             <a href={Cv} target="blank" className="cv">My Cv</a>

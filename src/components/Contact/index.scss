@@ -1,0 +1,56 @@
+.header {
+  border-bottom: 1px solid white;
+  height: 5rem;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  top: 0;
+  left: 0;
+}
+
+.contact {
+  border-top: 1px solid white;
+  background-color: #706f6f;
+  color: white;
+  height: -webkit-fill-available;
+  width: 80%;
+  margin: 5rem auto;
+  color: white;
+  &-icons {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  &-content {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  span {
+    padding: unset;
+    margin: unset;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 700px) {
+  span {
+    padding: unset;
+    margin: unset;
+  }
+  .contact-icons {
+    padding-top: unset;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  span {
+    padding: unset;
+    margin: unset;
+  }
+  .contact-icons {
+    padding-top: 20px;
+  }
+}

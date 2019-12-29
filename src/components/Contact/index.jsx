@@ -1,6 +1,6 @@
 import React from 'react';
 import Nav from '../Nav/index';
-import "./index.css";
+import "./index.scss";
 
 const contact = () => {
 
@@ -8,7 +8,7 @@ const contact = () => {
     <div className="contact" id={'contact'}>
     <Nav/>
     <h1>Contact</h1>
-    <div className="content">
+    <div className="contact-content">
       <div>
       <span>Mail: exit257@gmail.com</span>
       <br />

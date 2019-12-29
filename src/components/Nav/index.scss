@@ -22,7 +22,7 @@ li:hover {
 }
 
 .nav-icon {
-  margin-top: 15px;
+  margin-top: 11px;
   display: flex;
 }
 
@@ -39,21 +39,19 @@ a {
   position: fixed;
   width: 100%;
   z-index: 3;
-}
-
-.header ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-  background-color: #fff;
-}
-
-.header li a {
-  display: block;
-  text-decoration: none;
-  margin: 5px 3px 0px 2px;
-  color: white;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  li a {
+    display: block;
+    text-decoration: none;
+    margin: 5px 3px 0px 2px;
+    color: white;
+  }
 }
 
 .header .logo {
@@ -162,7 +160,7 @@ a {
 
 @media (min-width: 700px) {
   .header li {
-    padding: 16px 30px;
+    padding: 23px 30px;
   }
   .header .menu {
     clear: none;

@@ -18,4 +18,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Technologies
 
-ReactJS && JS && Firebase
+ReactJS && JS && Sass && Firebase

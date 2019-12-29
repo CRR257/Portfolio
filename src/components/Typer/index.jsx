@@ -1,6 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import './index.css';
+import './index.scss';
 
 class Typer extends React.Component {
 

@@ -5,7 +5,8 @@ function footer() {
   
   return (
     <div className="footer">
-        <h3>by  CRR257<i class="fas fa-paw"></i></h3>
+      <span className="footer-text">made with<i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i></span>
+      <span className="footer-text">by  CRR257<i class="fas fa-paw"></i></span>
     </div>
   );
 }

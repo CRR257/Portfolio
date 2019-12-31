@@ -1,11 +1,18 @@
 .footer {
-    background-color: #3c3c3c !important;
-    border-top: 1px solid white;
-    width: 100%;
-    color: white;
+  background-color: #3c3c3c !important;
+  border-top: 1px solid white;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+  flex-direction: column;
+  padding: 1rem;
+  &-text {
     display: flex;
     justify-content: center;
+  }
 }
-.fa-paw {
-    padding-left: 10px;
+.fas {
+  padding: 3px 10px;
 }

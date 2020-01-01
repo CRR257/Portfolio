@@ -28,7 +28,7 @@ function about() {
               loving to code in my free time and being a developer. 
             </span>
             <div>
-            <a href={Cv} target="blank" className="cv">My Cv</a>
+            <a href={Cv} target="blank" className="cv">My Cv<i class="fas fa-file-download"></i></a>
             </div>
           </div>
         <hr />

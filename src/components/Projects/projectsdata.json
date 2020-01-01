@@ -27,7 +27,7 @@
     {
       "title": "Portfolio",
       "imageProject": "portfolio.png",
-      "description": "Web about myself and my projects :)",
+      "description": "This web is my portfolio. It's where I show some things about me and the projects I have created.",
       "href": "https://clararufidev.web.app/",
       "github": "https://github.com/CRR257/Portfolio",
       "images":  ["js.jpg", "react.jpg", "sass.png", "firebase.png"]

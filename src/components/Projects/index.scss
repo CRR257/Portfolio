@@ -4,12 +4,10 @@ span {
 }
 
 .projects {
-  width: 85%;
   margin: 5rem auto;
   color: white;
   &-container {
-    display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -35,13 +33,13 @@ span {
     }
   }
 }
+
 .project {
   display: flex;
   flex-direction: column;
   width: 30%;
   border: 1px solid #d2d2d2;
-  padding: 2rem 1rem;
-  margin: 1rem 1rem;
+  height: 41rem;
   &-image {
     width: 90%;
     padding-bottom: unset;
@@ -88,12 +86,22 @@ a {
   font-size: 25px;
   font-weight: 800;
   background-color: #c1c1c1;
+  cursor: pointer;
 }
-@media screen and (max-width: 600px) {
+
+.aa {
+  position: absolute;
+  bottom: 0px;
+  /* left: 0px; */
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 700px) {
   .project {
     width: 70%;
     margin: 0 auto;
     margin-bottom: 1rem;
+    padding: 2rem 1rem;
     &-links {
       display: flex;
       justify-content: space-between;
@@ -102,10 +110,27 @@ a {
   span {
     font-size: 16px;
   }
+  .showprojects {
+    top: unset;
+    bottom: 2rem;
+    margin-left: 1rem;
+  }
+  .projects {
+    width: 95%;
+    &-container {
+      &__smallsize {
+        justify-content: space-evenly;
+        display: flex;
+      }
+    }
+  }
 }
-@media screen and (min-width: 600px) and (max-width: 1024px) {
+
+@media screen and (min-width: 700px) and (max-width: 1024px) {
   .project {
     width: 35%;
+    padding: 2rem 0.5rem;
+    margin: 1rem 1rem;
     &-links {
       display: flex;
       flex-direction: column;
@@ -115,11 +140,23 @@ a {
     display: flex;
     margin-top: 2rem;
   }
+  .projects {
+    &-container {
+      display: flex;
+      flex-wrap: wrap;
+      &__smallsize {
+        justify-content: center;
+        display: flex;
+      }
+    }
+  }  
 }
 
 @media screen and (min-width: 1024px) {
   .project {
     width: 25%;
+    padding: 2rem 1rem;
+    margin: 1rem 0.5rem;
     &-links {
       display: flex;
       justify-content: space-between;
@@ -127,5 +164,15 @@ a {
   }
   a {
     font-size: 18px;
+  }
+  .projects {
+    &-container {
+      display: flex;
+      flex-wrap: wrap;
+      &__smallsize {
+        justify-content: center;
+        display: flex;
+      }
+    }
   }
 }

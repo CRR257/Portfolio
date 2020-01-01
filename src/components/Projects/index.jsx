@@ -138,23 +138,24 @@ class Projects extends React.Component {
         <div className="projects" id={"projects"}>
           <h1>My projects</h1>
           <div className="projects-container">
-            {this.state.firstIndexProject > 0 && (
+            <div className="projects-container__smallsize">
               <button
+                disabled={this.state.firstIndexProject < 1}
                 className="showprojects"
                 onClick={this.handleShowLastProject}
               >
                 {'\u003c'}
               </button>
-            )}
-            {showCards}
-            {this.state.indexProject < this.state.projectShow.length && (
+            {!this.state.mobile && showCards}
               <button
+                disabled={this.state.indexProject > this.state.projectShow.length-1}
                 className="showprojects"
                 onClick={this.handleShowNextProject}
               >
                 {'\u003e'}
               </button>
-            )}
+              </div>        
+            {this.state.mobile && showCards}
           </div>
         </div>
       </div>

@@ -13,7 +13,7 @@ class Typer extends React.Component {
       loopNum: 0,
       typingSpeed: 150,
       heading: "Hi,",
-      dataText: ["my name is Clara", "I'm a developer, ", "I'm a committed developer, ", "I love to make web pages"]
+      dataText: ["I'm Clara,", "I'm a developer, ", "I'm a committed developer, ", "I \u2665 to make web pages"]
     }
   }
 

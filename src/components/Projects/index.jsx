@@ -21,7 +21,6 @@ class Projects extends React.Component {
   // to change this.state.screenwindow if the window's change directon or resize
   componentWillMount() {
     window.addEventListener("resize", this.handleWindowSizeChange);
-    this.handleShowProjects();
   }
 
   componentWillUnmount() {
@@ -30,7 +29,6 @@ class Projects extends React.Component {
 
   handleWindowSizeChange = () => {
     this.setState({ screenWidth: window.innerWidth });
-    this.handleShowProjects();
   };
 
   handleShowProjects = () => {

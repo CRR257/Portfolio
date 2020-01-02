@@ -3,7 +3,7 @@
 
 ## Introduction
 
-My portfolio deployed in Firebase
+This web is my portfolio. It's where I show some things about me and the projects I have created.
 
 https://clararufidev.web.app/
 

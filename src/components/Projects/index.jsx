@@ -102,7 +102,7 @@ class Projects extends React.Component {
     const showCards = this.state.projectShow
       .slice(this.state.firstIndexProject, this.state.indexProject)
       .map(project => (
-        <div className="project">
+        <div className="project" key={project}>
           <span className="project-title">{project.title}</span>
           <img
             className="project-image"
@@ -117,7 +117,7 @@ class Projects extends React.Component {
           <ul className="project-technology tooltip">
             {project.images.map(image => {
               return (
-                <li>
+                <li key={image}>
                   <img
                     className="project-technology__image tooltip"
                     src={require("../../img/technology/" + image)}

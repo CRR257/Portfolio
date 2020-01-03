@@ -8,7 +8,7 @@ const nav = () => {
   return (
     <header className="header">
       <input className="menu-btn" type="checkbox" id="menu-btn" />
-      <label className="menu-icon" for="menu-btn"><span className="navicon"></span></label>
+      <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
       <ul className="menu">
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/about/#about'>About</Link></li>

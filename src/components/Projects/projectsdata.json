@@ -3,7 +3,7 @@
     {  
       "title": "Smart fridge",
       "imageProject": "smartFridge.png",
-      "description": "Aplication to calculate the amount of calories users need everyday, depen of their gender, age,weight, height and lifestyle(daily exercise)",
+      "description": "Aplication to calculate the amount of calories users need everyday, depen of their gender, age,weight, height and lifestyle(daily exercise).",
       "href": "http://smart-fridge-pro.surge.sh",
       "github": "https://github.com/CRR257/Smart-fridge-group-project",
       "images": ["js.jpg", "react.jpg", "sass.png", "heroku.png"]
@@ -11,7 +11,7 @@
     {
     "title": "St James Vet",
     "imageProject": "stJamesVet.png",
-    "description": "Application to manage owners and pets of a veterinary clinic",
+    "description": "Web to manage owners and pets of a veterinary clinic.",
     "href": "http://st-james-vet.surge.sh",
     "github": "https://github.com/CRR257/Final-Project___St-James-vet",
     "images": [ "js.jpg", "react.jpg", "sass.png", "node.png", "express.png", "mongo.jpeg", "heroku.png"]
@@ -27,7 +27,7 @@
     {
       "title": "Portfolio",
       "imageProject": "portfolio.png",
-      "description": "This web is my portfolio. It's where I show some things about me and the projects I have created.",
+      "description": "My personal website. It's where I show some things about me and the projects I have created :).",
       "href": "https://clararufidev.web.app/",
       "github": "https://github.com/CRR257/Portfolio",
       "images":  ["js.jpg", "react.jpg", "sass.png", "firebase.png"]
@@ -35,7 +35,7 @@
     {
       "title": "Get_data",
       "imageProject": "getData.png",
-      "description": "App made with Vue.js and how to get data from API, firebase store and make charts with chart.js",
+      "description": "App made by miniprojects to start with vue.js and chart.js (getting data from API, parsing JSON, and get data from firebase store).",
       "href": "https://get-data-crr257.firebaseapp.com/",
       "github": "https://github.com/CRR257/Get_data",
       "images":  ["js.jpg", "vue.png", "firebase.png"]
@@ -43,7 +43,7 @@
     {
       "title": "Energy_plans",
       "imageProject": "energyPlans.png",
-      "description": "App to show the the price during the day of three differents fares.User can click on a fare's chart label to hide the fare selected. If it's cliked again it's shown.",
+      "description": "App to show the the price during the day of three differents fares.",
       "href": "https://energy-plans-crr257.firebaseapp.com",
       "github": "https://github.com/CRR257/Energy__plans",
       "images":  ["js.jpg", "vue.png", "sass.png", "firebase.png"]
@@ -51,7 +51,7 @@
     {
       "title": "Authentication",
       "imageProject": "usersForm.png",
-      "description": "Mini app to authenticate users using Vuex and Firebase's authentication",
+      "description": "Work in Progress - Mini app to authenticate users using Vuex and Firebase's authentication",
       "href": "",
       "github": "https://github.com/CRR257/Authentication",
       "images":  ["js.jpg", "vue.png", "sass.png", "firebase.png"]

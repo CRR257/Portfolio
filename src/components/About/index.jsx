@@ -5,7 +5,11 @@ import gala from "../../img/general/gala.jpg";
 import Cv from '../../cv/cv_clara_rufi.pdf';
 import "./index.scss";
 
+
+
 function about() {
+  window.scrollTo(0, 0)
+
     return (
       <div>
       <Nav />

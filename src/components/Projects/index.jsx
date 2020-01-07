@@ -58,6 +58,7 @@ class Projects extends React.Component {
   };
   componentDidMount() {
     this.handleShowProjects();
+    window.scrollTo(0, 0)
   }
 
   handleShowNextProject = () => {
@@ -110,6 +111,7 @@ class Projects extends React.Component {
             alt={project.name}
           />
           <span>{project.description}</span>
+          <div className="project-content">
           <div className="project-links">
             <a href={project.href}>Live demo</a>
             <a href={project.github}>GitHub repo</a>
@@ -127,6 +129,7 @@ class Projects extends React.Component {
               );
             })}
           </ul>
+        </div>
         </div>
       ));
 

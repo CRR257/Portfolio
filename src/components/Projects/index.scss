@@ -67,7 +67,7 @@ span {
   &-content {
     position: absolute;
     bottom: 0;
-    width: 90%;
+    width: 93%;
   }
 }
 
@@ -93,13 +93,6 @@ a {
   font-weight: 800;
   background-color: #c1c1c1;
   cursor: pointer;
-}
-
-.aa {
-  position: absolute;
-  bottom: 0px;
-  /* left: 0px; */
-  padding-top: 10px;
 }
 
 @media screen and (max-width: 700px) {
@@ -168,9 +161,6 @@ a {
       justify-content: space-between;
     }
   }
-  a {
-    font-size: 18px;
-  }
   .projects {
     &-container {
       display: flex;
@@ -179,6 +169,9 @@ a {
         justify-content: center;
         display: flex;
       }
+    }
+    &-content {
+      height: 10rem;
     }
   }
 }

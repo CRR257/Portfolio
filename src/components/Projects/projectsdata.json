@@ -18,11 +18,11 @@
     },
     {
     "title": "Rick & Morty",
-    "imageProject": "rickAndMorty.png",
+    "imageProject": "rick_morty2.png",
     "description": "Web to show information about some Rick and Morty's characters.User can search by character's name.",
-    "href": "https://rickmortyweb.web.app/",
+    "href": "https://rick-morty-crr257.firebaseapp.com/",
     "github": "https://github.com/CRR257/Rick-Morty",
-    "images":  ["js.jpg", "react.jpg","graphql.png","apolloclient.png", "firebase.png"]
+    "images":  ["js.jpg", "react.jpg","graphql.png","apolloclient.png", "sass.png", "firebase.png"]
     },
     {
       "title": "Portfolio",
@@ -46,14 +46,6 @@
       "description": "App to show the the price during the day of three differents fares.",
       "href": "https://energy-plans-crr257.firebaseapp.com",
       "github": "https://github.com/CRR257/Energy__plans",
-      "images":  ["js.jpg", "vue.png", "sass.png", "firebase.png"]
-    },
-    {
-      "title": "Authentication",
-      "imageProject": "usersForm.png",
-      "description": "Work in Progress - Mini app to authenticate users using Vuex and Firebase's authentication",
-      "href": "",
-      "github": "https://github.com/CRR257/Authentication",
       "images":  ["js.jpg", "vue.png", "sass.png", "firebase.png"]
     }
   ]

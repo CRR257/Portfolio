@@ -6,7 +6,7 @@ import Projects from "../Projects/index";
 import Contact from "../Contact/index";
 import Footer from '../Footer/index';
 
-const homePage = props => {
+const homePage = () => {
 
     return (
       <div>

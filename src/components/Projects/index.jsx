@@ -1,4 +1,5 @@
 import React from "react";
+
 import Nav from "../Nav/index";
 import projectsdata from "./projectsdata";
 import "./index.scss";
@@ -18,6 +19,11 @@ class Projects extends React.Component {
       desktop: false
     };
   }
+  componentDidMount() {
+    this.handleShowProjects();
+    window.scrollTo(0, 0)
+  }
+
   // to change this.state.screenwindow if the window's change directon or resize
   componentWillMount() {
     window.addEventListener("resize", this.handleWindowSizeChange);
@@ -56,10 +62,6 @@ class Projects extends React.Component {
       });
     }
   };
-  componentDidMount() {
-    this.handleShowProjects();
-    window.scrollTo(0, 0)
-  }
 
   handleShowNextProject = () => {
     if (this.state.mobile) {

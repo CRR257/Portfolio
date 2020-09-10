@@ -10,10 +10,10 @@ const about = () => {
   window.scrollTo(0, 0);
 
   return (
-    <div>
+    <div className="about">
       <Nav />
       <div className="about-container" id={"about"}>
-        <h1>My story</h1>
+        <p className="about-title">My story</p>
         <div className="about-content">
           <img src={me} alt="me" />
           <span>
@@ -38,7 +38,7 @@ const about = () => {
           </div>
         </div>
         <hr />
-        <h1>My hobbies</h1>
+        <p className="about-title">My hobbies</p>
         <div className="about-content">
           <img className="gala" src={gala} alt="gala" />
           <span>
@@ -47,7 +47,6 @@ const about = () => {
             course, coding with my furry supurrvisor (aka my cat)!
           </span>
         </div>
-        <hr />
       </div>
     </div>
   );

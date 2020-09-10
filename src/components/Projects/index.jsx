@@ -112,26 +112,28 @@ class Projects extends React.Component {
             src={require("../../img/projects/" + project.imageProject)}
             alt={project.name}
           />
-          <span>{project.description}</span>
-          <div className="project-content">
-          <div className="project-links">
-            <a href={project.href}>Live demo</a>
-            <a href={project.github}>GitHub repo</a>
+          <div className="project-description">
+            <span>{project.description}</span>
           </div>
-          <ul className="project-technology tooltip">
-            {project.images.map(image => {
-              return (
-                <li key={image}>
-                  <img
-                    className="project-technology__image tooltip"
-                    src={require("../../img/technology/" + image)}
-                    alt=""
-                  />
-                </li>
-              );
-            })}
-          </ul>
-        </div>
+          <div className="project-content">
+            <div className="project-links">
+              <a href={project.href} target="_blank" rel="noopener noreferrer">Live demo</a>
+              <a href={project.github} target="_blank" rel="noopener noreferrer">GitHub repo</a>
+            </div>
+            <ul className="project-technology tooltip">
+              {project.images.map(image => {
+                return (
+                  <li key={image}>
+                    <img
+                      className="project-technology__image tooltip"
+                      src={require("../../img/technology/" + image)}
+                      alt=""
+                    />
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
         </div>
       ));
 
@@ -139,7 +141,7 @@ class Projects extends React.Component {
       <div>
         <Nav />
         <div className="projects" id={"projects"}>
-          <h1>My projects</h1>
+          <p className="projects-title">My projects</p>
           <div className="projects-container">
             <div className="projects-container__smallsize">
               <button
@@ -149,15 +151,15 @@ class Projects extends React.Component {
               >
                 {'\u003c'}
               </button>
-            {!this.state.mobile && showCards}
+              {!this.state.mobile && showCards}
               <button
-                disabled={this.state.indexProject > this.state.projectShow.length-1}
+                disabled={this.state.indexProject > this.state.projectShow.length - 1}
                 className="showprojects"
                 onClick={this.handleShowNextProject}
               >
                 {'\u003e'}
               </button>
-              </div>        
+            </div>
             {this.state.mobile && showCards}
           </div>
         </div>

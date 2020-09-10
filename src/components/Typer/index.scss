@@ -35,7 +35,6 @@ h5,h6 {
   }
 }
 
-
 @media screen and (max-width: 400px) {
   .home {
     height: 40rem;
@@ -48,7 +47,6 @@ h5,h6 {
       padding: 0 3rem;
     }
   }
-
   h5,h6 {
     padding: 8px;
   }
@@ -89,7 +87,6 @@ h5,h6 {
 }
 
 @media (min-width: 900px)  {
-  
   .home {
     height: 160vh;
     &-heading {
@@ -101,7 +98,6 @@ h5,h6 {
       margin-left: 16rem;
     }
   }
-
   h5,h6 {
     padding: 15px;
   }

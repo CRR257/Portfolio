@@ -1,16 +1,13 @@
-h1 {
-  display: flex;
-  justify-content: center;
-  padding: 3rem 0 2rem 0;
-  margin-top: 3rem;
-}
-
 a {
   color: black;
   cursor: pointer;
   margin-right: 1rem;
   font-size: 20px;
   padding: unset;
+}
+
+a:hover {
+  font-weight: bold;
 }
 
 hr {
@@ -29,7 +26,6 @@ hr {
 
 .about {
   border-top: 1px solid white;
-  background-color: #7d7d7d;
   color: white;
   &-content {
     display: flex;
@@ -38,7 +34,13 @@ hr {
     flex-wrap: wrap;
     flex-direction: row;
   }
-  &-container{
+  &-title {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0 1rem 0;
+    font-size: 24px;
+  }
+  &-container {
     color: white;
     width: 80%;
     margin: 5rem auto;
@@ -69,8 +71,7 @@ span {
 }
 
 @media screen and (max-width: 400px) {
-  .about{
-    padding: 4rem 3rem;
+  .about {
     &-content {
       padding: 1rem 1rem !important;
     }
@@ -88,9 +89,8 @@ span {
     width: 300px;
   }
   .about {
-  padding: 6rem 3rem 9rem 3rem;
-   &-content {
-    padding: 1rem 3rem !important;
+    &-content {
+      padding: 1rem 3rem !important;
     }
   }
   span {
@@ -107,8 +107,7 @@ span {
   span {
     padding: 25px;
   }
-  .about{
-    padding: 6rem 5rem 9rem 5rem;
+  .about {
     &-content {
       padding: 1rem 5rem;
     }
@@ -127,8 +126,7 @@ span {
   span {
     padding: unset;
   }
-  .about{
-    padding: 6rem 9rem 9rem 9rem;
+  .about {
     &-content {
       padding: 2rem 5rem 4rem 5rem;
     }
@@ -148,8 +146,7 @@ span {
     padding: unset;
     font-size: 21px;
   }
-  .about{
-    padding: 6rem 9rem 9rem 9rem;
+  .about {
     &-content {
       padding: 2rem 5rem 4rem 5rem;
     }
@@ -162,8 +159,4 @@ span {
     width: 620px;
     padding-bottom: 4rem;
   }
-}
-
-a:hover {
-  font-weight: bold;
 }

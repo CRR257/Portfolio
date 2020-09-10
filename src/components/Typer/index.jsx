@@ -1,6 +1,5 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-
 import './index.scss';
 
 class Typer extends React.Component {
@@ -47,8 +46,8 @@ class Typer extends React.Component {
       <div className="home" id={'home'}>
         <div className="home-heading">
           <h5>{this.state.heading}</h5>
-          </div>
-          <div className="home-text">
+        </div>
+        <div className="home-text">
           <h6>{this.state.text}</h6>
           <span className="home-cursor"></span>
         </div>

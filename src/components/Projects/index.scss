@@ -6,6 +6,13 @@ span {
 .projects {
   margin: 5rem auto;
   color: white;
+  border-top: 1px solid white;
+  &-title {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0 1rem 0;
+    font-size: 24px;
+  }
   &-container {
     justify-content: center;
   }
@@ -47,16 +54,24 @@ span {
     margin: 1rem auto;
     border: 1px solid #b5b5b5;
     border-radius: unset;
+    height: 33%;
+  }
+  &-description {
+    width: 90%;
+    margin: 1rem auto;
   }
   &-technology {
     max-width: 100%;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin: 20px 0;
+    margin: 10px 0;
     &__image {
       width: 40px;
       border-radius: 5px;
       padding: unset;
+    }
+    li {
+      margin: 0 3px;
     }
   }
   &-title {
@@ -112,13 +127,14 @@ a {
   .showprojects {
     top: unset;
     bottom: 2rem;
-    margin-left: 1rem;
+    margin: 0 3rem;
   }
   .projects {
     width: 95%;
     &-container {
+      padding-top: 2rem;
       &__smallsize {
-        justify-content: space-evenly;
+        justify-content: center;
         display: flex;
       }
     }
@@ -130,6 +146,9 @@ a {
     width: 35%;
     padding: 2rem 0.5rem;
     margin: 1rem 1rem;
+    &-image {
+      height: 37%;
+    }
     &-links {
       display: flex;
       flex-direction: column;
@@ -143,12 +162,13 @@ a {
     &-container {
       display: flex;
       flex-wrap: wrap;
+      padding-top: unset;
       &__smallsize {
         justify-content: center;
         display: flex;
       }
     }
-  }  
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -156,6 +176,9 @@ a {
     width: 25%;
     padding: 2rem 1rem;
     margin: 1rem 0.5rem;
+    &-image {
+      height: 36%;
+    }
     &-links {
       display: flex;
       justify-content: space-between;
@@ -172,6 +195,14 @@ a {
     }
     &-content {
       height: 10rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project {
+    &-image {
+      height: 45%;
     }
   }
 }

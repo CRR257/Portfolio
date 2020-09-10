@@ -2,27 +2,27 @@
   "Projects" : [
     {  
       "title": "Smart fridge",
-      "imageProject": "smartFridge.png",
-      "description": "Aplication to calculate the amount of calories users need everyday, depen of their gender, age,weight, height and lifestyle(daily exercise).",
+      "imageProject": "smart_fridge.png",
+      "description": "App to calculate the amount of calories users need everyday, depen of their gender, age,weight, height and lifestyle(daily exercise).",
       "href": "http://smart-fridge-pro.surge.sh",
       "github": "https://github.com/CRR257/Smart-fridge-group-project",
       "images": ["js.jpg", "react.jpg", "sass.png", "heroku.png"]
     },  
     {
     "title": "St James Vet",
-    "imageProject": "stJamesVet.png",
-    "description": "Web to manage owners and pets of a veterinary clinic.",
+    "imageProject": "st_james_vet.png",
+    "description": "App to manage owners and pets of a veterinary clinic.Veterinarian registers owners and their animals,can modify their profiles, add information for each visit and assign visits.Owners can see their visits and delete only the visit two days before the day.",
     "href": "http://st-james-vet.surge.sh",
     "github": "https://github.com/CRR257/Final-Project___St-James-vet",
-    "images": [ "js.jpg", "react.jpg", "sass.png", "node.png", "express.png", "mongo.jpeg", "heroku.png"]
+    "images": [ "js.jpg", "react.jpg", "node.png", "mongo.jpeg", "heroku.png"]
     },
     {
     "title": "Rick & Morty",
-    "imageProject": "rick_morty2.png",
-    "description": "Web to show information about some Rick and Morty's characters.User can search by character's name.",
+    "imageProject": "rick_morty.png",
+    "description": "App to show information about some Rick and Morty's characters.User can search by character's name.",
     "href": "https://rick-morty-crr257.firebaseapp.com/",
     "github": "https://github.com/CRR257/Rick-Morty",
-    "images":  ["js.jpg", "react.jpg","graphql.png","apolloclient.png", "sass.png", "firebase.png"]
+    "images":  ["js.jpg", "react.jpg","graphql.png","apolloclient.png", "firebase.png"]
     },
     {
       "title": "Portfolio",
@@ -34,19 +34,19 @@
     },
     {
       "title": "Get_data",
-      "imageProject": "getData.png",
+      "imageProject": "get_data.png",
       "description": "App made by miniprojects to start with vue.js and chart.js (getting data from API, parsing JSON, and get data from firebase store).",
       "href": "https://get-data-crr257.firebaseapp.com/",
       "github": "https://github.com/CRR257/Get_data",
       "images":  ["js.jpg", "vue.png", "firebase.png"]
     },
     {
-      "title": "Energy_plans",
-      "imageProject": "energyPlans.png",
-      "description": "App to show the the price during the day of three differents fares.",
-      "href": "https://energy-plans-crr257.firebaseapp.com",
-      "github": "https://github.com/CRR257/Energy__plans",
-      "images":  ["js.jpg", "vue.png", "sass.png", "firebase.png"]
+      "title": "Crococodilians_reserve",
+      "imageProject": "crocodilians.png",
+      "description": "App to manage crocodilians in a reserve. User can get all crocodilians created,see awesome videos about crocodilians and test his knowldge about crocodilians ^^",
+      "href": "https://crocodilians-reserve.herokuapp.com",
+      "github": "https://github.com/CRR257/Crococodilians_reserve",
+      "images":  ["typescript.png", "angular.png", "sass.png", "mySql.jpg", "heroku.png"]
     }
   ]
 }

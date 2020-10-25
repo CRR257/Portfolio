@@ -1,52 +1,156 @@
 {
-  "Projects" : [
-    {  
+  "Projects": [
+    {
       "title": "Smart fridge",
       "imageProject": "smart_fridge.png",
       "description": "App to calculate the amount of calories users need everyday, depen of their gender, age,weight, height and lifestyle(daily exercise).",
       "href": "http://smart-fridge-pro.surge.sh",
       "github": "https://github.com/CRR257/Smart-fridge-group-project",
-      "images": ["js.jpg", "react.jpg", "sass.png", "heroku.png"]
-    },  
+      "iconsTechnology": [
+        {
+          "name": "js.jpg",
+          "title": "Javascript"
+        },
+        {
+          "name": "react.jpg",
+          "title": "ReactJs"
+        },
+        {
+          "name": "sass.png",
+          "title": "Sass"
+        },
+        {
+          "name": "heroku.png",
+          "title": "Heroku"
+        }
+      ]},
     {
-    "title": "St James Vet",
-    "imageProject": "st_james_vet.png",
-    "description": "App to manage owners and pets of a veterinary clinic.Veterinarian registers owners and their animals,can modify their profiles, add information for each visit and assign visits.Owners can see their visits and delete only the visit two days before the day.",
-    "href": "http://st-james-vet.surge.sh",
-    "github": "https://github.com/CRR257/Final-Project___St-James-vet",
-    "images": [ "js.jpg", "react.jpg", "node.png", "mongo.jpeg", "heroku.png"]
-    },
+      "title": "St James Vet",
+      "imageProject": "st_james_vet.png",
+      "description": "App to manage owners and pets of a veterinary clinic.Veterinarian registers owners and their animals,can modify their profiles, add information for each visit and assign visits.Owners can see their visits and delete only the visit two days before the day.",
+      "href": "http://st-james-vet.surge.sh",
+      "github": "https://github.com/CRR257/Final-Project___St-James-vet",
+      "iconsTechnology": [
+        {
+          "name": "js.jpg",
+          "title": "Javascript"
+        },
+        {
+          "name": "react.jpg",
+          "title": "ReactJs"
+        },
+        {
+          "name": "node.png",
+          "title": "Node.js"
+        },
+        {
+          "name": "mongo.jpeg",
+          "title": "MongoDB"
+        },
+        {
+          "name": "heroku.png",
+          "title": "Heroku"
+        }
+      ]},
     {
-    "title": "Rick & Morty",
-    "imageProject": "rick_morty.png",
-    "description": "App to show information about some Rick and Morty's characters.User can search by character's name.",
-    "href": "https://rick-morty-crr257.firebaseapp.com/",
-    "github": "https://github.com/CRR257/Rick-Morty",
-    "images":  ["js.jpg", "react.jpg","graphql.png","apolloclient.png", "firebase.png"]
-    },
+      "title": "Rick & Morty",
+      "imageProject": "rick_morty.png",
+      "description": "App to show information about some Rick and Morty's characters.User can search by character's name.",
+      "href": "https://rick-morty-crr257.firebaseapp.com/",
+      "github": "https://github.com/CRR257/Rick-Morty",
+      "iconsTechnology": [
+        {
+          "name": "js.jpg",
+          "title": "Javascript"
+        },
+        {
+          "name": "react.jpg",
+          "title": "ReactJs"
+        },
+        {
+          "name": "graphql.png",
+          "title": "GraphQL"
+        },
+        {
+          "name": "apolloclient.png",
+          "title": "Apollo Client"
+        },
+        {
+          "name": "firebase.png",
+          "title": "Firebase"
+        }
+      ]},
     {
       "title": "Portfolio",
       "imageProject": "portfolio.png",
       "description": "My personal website. It's where I show some things about me and the projects I have created :).",
       "href": "https://clararufidev.web.app/",
       "github": "https://github.com/CRR257/Portfolio",
-      "images":  ["js.jpg", "react.jpg", "sass.png", "firebase.png"]
-    },
+      "iconsTechnology": [
+        {
+          "name": "js.jpg",
+          "title": "Javascript"
+        },
+        {
+          "name": "react.jpg",
+          "title": "ReactJs"
+        },
+        {
+          "name": "sass.png",
+          "title": "Sass"
+        },
+        {
+          "name": "firebase.png",
+          "title": "Firebase"
+        }
+      ]},
     {
       "title": "Get_data",
       "imageProject": "get_data.png",
       "description": "App made by miniprojects to start with vue.js and chart.js (getting data from API, parsing JSON, and get data from firebase store).",
       "href": "https://get-data-crr257.firebaseapp.com/",
       "github": "https://github.com/CRR257/Get_data",
-      "images":  ["js.jpg", "vue.png", "firebase.png"]
-    },
+      "iconsTechnology": [
+        {
+          "name": "js.jpg",
+          "title": "Javascript"
+        },
+        {
+          "name": "vue.png",
+          "title": "VueJs"
+        },
+        {
+          "name": "firebase.png",
+          "title": "Firebase"
+        }
+      ]},
     {
       "title": "Crococodilians_reserve",
       "imageProject": "crocodilians.png",
       "description": "App to manage crocodilians in a reserve. User can get all crocodilians created,see awesome videos about crocodilians and test his knowldge about crocodilians ^^",
       "href": "https://crocodilians-reserve.herokuapp.com",
       "github": "https://github.com/CRR257/Crococodilians_reserve",
-      "images":  ["typescript.png", "angular.png", "sass.png", "mySql.jpg", "heroku.png"]
-    }
+      "iconsTechnology": [
+        {
+          "name": "typescript.png",
+          "title": "Typescript"
+        },
+        {
+          "name": "angular.png",
+          "title": "Angular"
+        },
+        {
+          "name": "sass.png",
+          "title": "Sass"
+        },
+        {
+          "name": "mySql.jpg",
+          "title": "MySQL"
+        },
+        {
+          "name": "heroku.png",
+          "title": "Heroku"
+        }
+      ]}
   ]
 }

@@ -1,6 +1,4 @@
 import React from "react";
-
-import Nav from "../Nav/index";
 import projectsdata from "./projectsdata";
 import "./index.scss";
 
@@ -120,15 +118,16 @@ class Projects extends React.Component {
               <a href={project.href} target="_blank" rel="noopener noreferrer">Live demo</a>
               <a href={project.github} target="_blank" rel="noopener noreferrer">GitHub repo</a>
             </div>
-            <ul className="project-technology tooltip">
-              {project.images.map(image => {
+            <ul className="project-technology">
+              {project.iconsTechnology.map(icon => {
                 return (
-                  <li key={image}>
+                  <li key={icon} className="img--tooltip">
                     <img
-                      className="project-technology__image tooltip"
-                      src={require("../../img/technology/" + image)}
+                      className="project-technology__icon"
+                      src={require("../../img/technology/" + icon.name)}
                       alt=""
                     />
+                     <span class="img--tooltiptext icons">{icon.title}</span>
                   </li>
                 );
               })}
@@ -138,15 +137,13 @@ class Projects extends React.Component {
       ));
 
     return (
-      <div>
-        <Nav />
         <div className="projects" id={"projects"}>
-          <p className="projects-title">My projects</p>
           <div className="projects-container">
+          <p className="projects-title">My projects</p>
             <div className="projects-container__smallsize">
               <button
                 disabled={this.state.firstIndexProject < 1}
-                className="showprojects"
+                className="button-showprojects"
                 onClick={this.handleShowLastProject}
               >
                 {'\u003c'}
@@ -154,7 +151,7 @@ class Projects extends React.Component {
               {!this.state.mobile && showCards}
               <button
                 disabled={this.state.indexProject > this.state.projectShow.length - 1}
-                className="showprojects"
+                className="button-showprojects"
                 onClick={this.handleShowNextProject}
               >
                 {'\u003e'}
@@ -163,7 +160,6 @@ class Projects extends React.Component {
             {this.state.mobile && showCards}
           </div>
         </div>
-      </div>
     );
   }
 }

@@ -1,45 +1,20 @@
-span {
-  padding: unset;
-  font-size: 19px;
-}
-
 .projects {
-  margin: 5rem auto;
-  color: white;
   border-top: 1px solid white;
   &-title {
     display: flex;
     justify-content: center;
-    padding: 3rem 0 1rem 0;
     font-size: 24px;
     margin: unset;
   }
   &-container {
     justify-content: center;
+    margin: 4rem auto;
   }
 }
 
-.text {
+span {
   padding: unset;
-}
-
-.content {
-  &-project {
-    display: flex;
-    align-items: left;
-    justify-content: center;
-    flex-direction: column;
-    &__title {
-      padding: 14px 0;
-      font-family: "Avenir", Arial, Helvetica, sans-serif;
-      font-size: 22px;
-      letter-spacing: 1.1px;
-    }
-    &__technologies {
-      display: flex;
-      flex-wrap: wrap;
-    }
-  }
+  font-size: 19px;
 }
 
 .project {
@@ -66,7 +41,7 @@ span {
     flex-wrap: wrap;
     justify-content: flex-start;
     margin: 10px 0;
-    &__image {
+    &__icon {
       width: 40px;
       border-radius: 5px;
       padding: unset;
@@ -98,7 +73,8 @@ a {
   font-size: 16px;
   margin-top: 10px;
 }
-.showprojects {
+
+.button-showprojects {
   height: 40px;
   width: 40px;
   position: relative;
@@ -109,6 +85,10 @@ a {
   font-weight: 800;
   background-color: #c1c1c1;
   cursor: pointer;
+}
+
+.icons {
+  left: 120% !important;
 }
 
 @media screen and (max-width: 700px) {
@@ -125,15 +105,13 @@ a {
   span {
     font-size: 16px;
   }
-  .showprojects {
+  .button-showprojects {
     top: unset;
-    bottom: 2rem;
-    margin: 0 3rem;
+    margin: 0.5rem 3rem;
   }
   .projects {
     width: 95%;
     &-container {
-      padding-top: 2rem;
       &__smallsize {
         justify-content: center;
         display: flex;

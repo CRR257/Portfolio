@@ -3,10 +3,11 @@
   &-content {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
-    padding: 0 1rem 1rem 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
   }
   &-title {
     display: flex;
@@ -14,7 +15,6 @@
     font-size: 24px;
   }
   &-container {
-    width: 80%;
     margin: 4rem auto;
   }
   &-images {
@@ -34,6 +34,7 @@ img {
 span {
   font-size: 19px;
   padding: 1rem 0;
+  text-align: justify;
 }
 
 .cv {
@@ -45,16 +46,14 @@ span {
   padding-bottom: 40px;
 }
 
-img {
-  width: 200px;
-}
 .img--size {
-  width: 250px;
   padding-bottom: 2rem;
 }
 
 .img--tooltip:hover .img--tooltiptext {
   visibility: visible;
+  width: 70px;
+  text-align: center;
 }
 
 a {
@@ -86,25 +85,36 @@ hr {
   padding: 3px 0 3px 10px !important;
 }
 
+@media only screen and (max-width: 429px) {
+  .img {
+    &--size {
+      width: 300px;
+    }
+  }
+  .about-images__micro {
+    width: 250px;
+  }
+  .micro {
+    margin-top: 156px !important;
+  }
+}
+
 @media screen and (min-width: 430px) and (max-width: 700px) {
-  img {
-    width: 300px;
+  .img {
     &--size {
       width: 400px;
     }
   }
-  span {
-    display: flex;
-    margin-top: 2rem;
+  .about-images__micro {
+    width: 300px;
+  }
+  .micro {
+    margin-top: 180px !important;
   }
 }
 
 @media screen and (min-width: 700px) and (max-width: 1024px) {
-  span {
-    padding: 25px;
-  }
-
-  img {
+  .about-images__micro {
     width: 310px;
   }
   .img--size {
@@ -114,38 +124,35 @@ hr {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
-  span {
-    padding: unset;
-  }
-  .about {
-    &-content {
-      padding: 2rem 5rem 4rem 5rem;
-    }
-  }
-  img {
+  .about-images__micro {
     width: 350px;
   }
   .img--size {
     width: 620px;
     padding-bottom: 4rem;
   }
+  .micro {
+    margin-top: 210px !important;
+  }
 }
 
-@media screen and (min-width: 1280px) {
+@media only screen and (min-width: 1280px) {
   span {
-    padding: unset;
     font-size: 21px;
   }
   .about {
     &-content {
-      padding: 2rem 5rem 4rem 5rem;
+      max-width: 850px;
     }
   }
-  img {
+  .about-images__micro {
     width: 350px;
   }
   .img--size {
     width: 620px;
     padding-bottom: 4rem;
+  }
+  .micro {
+    margin-top: 210px !important;
   }
 }

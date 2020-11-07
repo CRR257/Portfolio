@@ -14,7 +14,7 @@
 
 span {
   padding: unset;
-  font-size: 19px;
+  font-size: 16px;
 }
 
 .project {
@@ -25,7 +25,6 @@ span {
   height: 41rem;
   position: relative;
   &-image {
-    width: 90%;
     padding-bottom: unset;
     margin: 1rem auto;
     border: 1px solid #b5b5b5;
@@ -89,11 +88,14 @@ a {
 
 .icons {
   left: 120% !important;
+  width: unset !important;
+  margin-top: 44px !important;
 }
 
 @media screen and (max-width: 700px) {
   .project {
     width: 70%;
+    max-width: 360px;
     margin: 0 auto;
     margin-bottom: 1rem;
     padding: 2rem 1rem;
@@ -110,7 +112,6 @@ a {
     margin: 0.5rem 3rem;
   }
   .projects {
-    width: 95%;
     &-container {
       &__smallsize {
         justify-content: center;
@@ -118,6 +119,17 @@ a {
       }
     }
   }
+}
+@media screen and (min-width: 700px) and (max-width: 850px) {
+  .project-image {
+      width: 240px;
+    }
+}
+
+@media screen and (min-width: 850px) and (max-width: 1024px) {
+  .project-image {
+      width: 270px;
+    }
 }
 
 @media screen and (min-width: 700px) and (max-width: 1024px) {
@@ -135,7 +147,6 @@ a {
   }
   span {
     display: flex;
-    margin-top: 2rem;
   }
   .projects {
     &-container {
@@ -148,6 +159,9 @@ a {
       }
     }
   }
+    .icons {
+      margin-top: -5px !important;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -176,12 +190,7 @@ a {
       height: 10rem;
     }
   }
-}
-
-@media screen and (min-width: 1200px) {
-  .project {
-    &-image {
-      height: 45%;
-    }
-  }
+  .icons {
+    margin-top: 44px !important;
+  } 
 }

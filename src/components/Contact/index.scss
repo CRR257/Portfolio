@@ -9,43 +9,8 @@
     font-size: 24px;
     margin: unset;
   }
-  &-icons {
-    display: flex;
-    justify-content: center;
-  }
-  &-content {
-    position: relative;
-    top: 3rem;
-  }
   &-container {
     width: 80%;
     margin: 4rem auto;
-  }
-  &-gif {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 1rem;
-  }
-}
-
-span {
-  justify-content: center;
-  font-size: unset;
-  display: flex;
-  padding: unset;
-  margin: unset;
-}
-
-.gif--size {
-  width: 200px;
-  height: 200px;
-  border-radius: 4px;
-}
-
-@media screen and (min-width: 768px) {
-  .gif--size {
-    width: 300px;
-    height: 300px;
   }
 }

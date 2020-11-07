@@ -1,10 +1,10 @@
-import React from "react";
-import clara from "../../img/general/clara.png";
-import pseudomona from "../../img/general/pseudomona.jpg";
-import salmonella from "../../img/general/salmonella.jpg";
-import gala from "../../img/general/gala.jpg";
-import Cv from "../../cv/cv.pdf";
-import "./index.scss";
+import React from 'react';
+import clara from '../../img/general/clara.png';
+import salmonella from '../../img/general/salmonella.jpg';
+import salmonella2 from '../../img/general/salmonella2.jpg';
+import gala from '../../img/general/gala.jpg';
+import Cv from '../../cv/cv.pdf';
+import './index.scss';
 
 const about = () => {
   window.scrollTo({top: 0, behavior: 'smooth'});
@@ -24,21 +24,21 @@ const about = () => {
           </span>
         </div>
         <div className="about-images">
-          <div class="img--tooltip">
+          <div className="img--tooltip">
             <img
               src={salmonella}
               alt="salmonella"
               className="about-images__micro"
             />
-            <span class="img--tooltiptext">Salmonella</span>
+            <span className="img--tooltiptext micro">Salmonella on ASAP</span>
           </div>
-          <div class="img--tooltip">
+          <div className="img--tooltip">
             <img
-              src={pseudomona}
-              alt="pseudomona"
+              src={salmonella2}
+              alt="salmonella"
               className="about-images__micro"
             />
-            <span class="img--tooltiptext">Pseudomona</span>
+            <span className="img--tooltiptext micro">Salmonella on XLD</span>
           </div>
         </div>
         <div className="about-content">

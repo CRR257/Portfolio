@@ -1,0 +1,94 @@
+.form {
+  position: relative;
+  top: 3rem;
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0;
+  border: 1px solid white;
+  max-width: 600px;
+  margin: 0 auto;
+  &-group {
+      display: flex;
+      flex-direction: column;
+      padding: 10px 0;
+  }
+  &-gif {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 6rem;
+  }
+  &-showmodal {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+  }
+}
+
+input, textarea {
+  height: 40px;
+  border-radius: 3px;
+  color: #4c4c4c;
+  font-size: 14px;
+  border-color: #cccccc;
+  padding: 0px 6px;
+  border-width: 1px;
+  width: 270px;
+}
+
+.textarea {
+    height: 200px;
+    width: unset;
+    padding: 10px;
+    font: 400 14px Arial;
+}
+
+.button {
+  width: 120px;
+}
+
+.gif--size {
+  width: 200px;
+  height: 200px;
+  border-radius: 4px;
+}
+
+.popup {
+  display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    background-color: #333333;
+    padding: 3rem;
+    border: 1px solid grey;
+    z-index: 1;
+    bottom: 38rem;
+    position: relative;
+    top: 31%;
+    left: 50%;
+    margin-left: -200px;
+    margin-right: -200px;
+  &--text {
+    text-align: center;
+  }
+  &--button {
+    width: auto;
+    padding: 10px 12px;
+    margin: 0 auto;
+    position: relative;
+    top: 10px;
+    background-color: #bcb7b7;
+    border: unset;
+    color: #2c2c2c;
+    border-radius: 2px;
+  }
+}
+
+.error {
+  font-size: unset;
+  color: #6a0a0a;
+}
+
+@media screen and (min-width: 600px) {
+  input {
+      width: 400px;
+  }
+}

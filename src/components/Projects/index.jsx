@@ -1,6 +1,6 @@
-import React from "react";
-import projectsdata from "./projectsdata";
-import "./index.scss";
+import React from 'react';
+import projectsdata from './projectsdata';
+import './index.scss';
 
 class Projects extends React.Component {
   constructor(props) {
@@ -102,8 +102,8 @@ class Projects extends React.Component {
   render() {
     const showCards = this.state.projectShow
       .slice(this.state.firstIndexProject, this.state.indexProject)
-      .map(project => (
-        <div className="project" key={project}>
+      .map((project, index) => (
+        <div className="project" key={index}>
           <span className="project-title">{project.title}</span>
           <img
             className="project-image"
@@ -119,15 +119,15 @@ class Projects extends React.Component {
               <a href={project.github} target="_blank" rel="noopener noreferrer">GitHub repo</a>
             </div>
             <ul className="project-technology">
-              {project.iconsTechnology.map(icon => {
+              {project.iconsTechnology.map((icon, index) => {
                 return (
-                  <li key={icon} className="img--tooltip">
+                  <li key={index} className="img--tooltip">
                     <img
                       className="project-technology__icon"
                       src={require("../../img/technology/" + icon.name)}
                       alt=""
                     />
-                     <span class="img--tooltiptext icons">{icon.title}</span>
+                     <span className="img--tooltiptext icons">{icon.title}</span>
                   </li>
                 );
               })}

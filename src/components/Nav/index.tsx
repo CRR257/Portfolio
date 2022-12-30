@@ -1,8 +1,7 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
 import './index.scss';
 
-const nav = () => {
+export default function Nav() {
 
   return (
     <header className="header">
@@ -21,5 +20,3 @@ const nav = () => {
     </header>
   )
 }
-
-export default withRouter(nav);

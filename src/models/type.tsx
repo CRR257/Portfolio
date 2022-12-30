@@ -1,14 +1,12 @@
-export declare interface Typing {
+export declare interface TypeMessage {
   text: string;
   message: string;
   isDeleting: boolean;
   loopNum: number;
   typingSpeed: number;
-  // heading: string;
-  // messages: string[]
 }
 
 export const TypingSpeed = {
-  Typing: 150,
-  Delete: 30
+  DELETING_SPEED: 130,
+  TYPING_SPEED: 150
 }

@@ -1,10 +1,11 @@
 import React from 'react';
+import './index.scss';
+
 const clara = require('assets/img/general/clara.png');
 const salmonella = require('assets/img/general/salmonella.jpg');
 const salmonella2 = require('assets/img/general/salmonella2.jpg');
 const gala = require('assets/img/general/gala.jpg');
-const Cv = require('cv/cv.pdf');
-import './index.scss';
+const Cv = require('assets/cv/cv.pdf');
 
 export default function About() {
   window.scrollTo({top: 0, behavior: 'smooth'});

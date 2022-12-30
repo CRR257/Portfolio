@@ -1,14 +1,16 @@
 import React, {useState} from 'react';
 import {useForm} from 'react-hook-form';
-const gif = require('assets/img/general/catdev.gif');
 import './index.scss';
+
+const gif = require('assets/img/general/catdev.gif');
+
 
 declare global {
     interface Window {
         emailjs:any;
     }
 }
-const ContactForm = () => {
+export default function ContactForm() {
     let [showModal, setShowModal] = useState(false);
     let [contactName, setContactName] = useState('');
     let [errorSendEmail, setErrorSendEmail] = useState('');
@@ -115,6 +117,3 @@ const ContactForm = () => {
         </div>
     );
 }
-
-
-export default ContactForm;

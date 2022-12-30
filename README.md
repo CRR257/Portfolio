@@ -3,7 +3,8 @@
 
 ## Introduction
 
-This web is my portfolio. It's where I show some things about me and the projects I have created :)
+This is my portfolio. 
+It's where I show some things about me and the projects I have created :)
 
 [Live_demo](https://clararufidev.web.app/)
 
@@ -18,4 +19,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Technologies
 
-JS && ReactJS  && Sass && Firebase
+ReactJS && Ts && Sass && Firebase

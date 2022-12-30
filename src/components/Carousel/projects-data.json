@@ -8,12 +8,12 @@
       "github": "https://github.com/CRR257/Smart-fridge-group-project",
       "iconsTechnology": [
         {
-          "name": "js.jpg",
-          "title": "Javascript"
-        },
-        {
           "name": "react.jpg",
           "title": "ReactJs"
+        },
+        {
+          "name": "js.jpg",
+          "title": "Javascript"
         },
         {
           "name": "sass.png",
@@ -32,12 +32,12 @@
       "github": "https://github.com/CRR257/Final-Project___St-James-vet",
       "iconsTechnology": [
         {
-          "name": "js.jpg",
-          "title": "Javascript"
-        },
-        {
           "name": "react.jpg",
           "title": "ReactJs"
+        },
+        {
+          "name": "js.jpg",
+          "title": "Javascript"
         },
         {
           "name": "node.png",
@@ -60,12 +60,12 @@
       "github": "https://github.com/CRR257/Rick-Morty",
       "iconsTechnology": [
         {
-          "name": "js.jpg",
-          "title": "Javascript"
-        },
-        {
           "name": "react.jpg",
           "title": "ReactJs"
+        },
+        {
+          "name": "js.jpg",
+          "title": "Javascript"
         },
         {
           "name": "graphql.png",
@@ -88,12 +88,12 @@
       "github": "https://github.com/CRR257/Portfolio",
       "iconsTechnology": [
         {
-          "name": "js.jpg",
-          "title": "Javascript"
-        },
-        {
           "name": "react.jpg",
           "title": "ReactJs"
+        },
+        {
+          "name": "ts.png",
+          "title": "Javascript"
         },
         {
           "name": "sass.png",
@@ -112,12 +112,12 @@
       "github": "https://github.com/CRR257/Get_data",
       "iconsTechnology": [
         {
-          "name": "js.jpg",
-          "title": "Javascript"
-        },
-        {
           "name": "vue.png",
           "title": "VueJs"
+        },
+        {
+          "name": "js.jpg",
+          "title": "Javascript"
         },
         {
           "name": "firebase.png",
@@ -132,12 +132,12 @@
       "github": "https://github.com/CRR257/Crococodilians_reserve",
       "iconsTechnology": [
         {
-          "name": "typescript.png",
-          "title": "Typescript"
-        },
-        {
           "name": "angular.png",
           "title": "Angular"
+        },
+        {
+          "name": "ts.png",
+          "title": "Typescript"
         },
         {
           "name": "sass.png",
@@ -151,6 +151,7 @@
           "name": "heroku.png",
           "title": "Heroku"
         }
-      ]}
+      ]
+    }
   ]
 }

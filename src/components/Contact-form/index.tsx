@@ -1,15 +1,22 @@
 import React, {useState} from 'react';
 import {useForm} from 'react-hook-form';
-import gif from '../../img/general/catdev.gif';
 import './index.scss';
 
-const ContactForm = () => {
+const gif = require('assets/img/general/catdev.gif');
+
+
+declare global {
+    interface Window {
+        emailjs:any;
+    }
+}
+export default function ContactForm() {
     let [showModal, setShowModal] = useState(false);
     let [contactName, setContactName] = useState('');
     let [errorSendEmail, setErrorSendEmail] = useState('');
     const {register, handleSubmit, errors} = useForm();
-
-    const onSubmit = (data, r) => {
+    
+    const onSubmit = (data: any, r: any) => {
         setShowModal(true);
         setContactName(data.name)
         const templateId = "template_sx0twwd";
@@ -22,9 +29,12 @@ const ContactForm = () => {
         r.target.reset();
     };
 
-    const sendFeedback = (serviceID, templateId, variables) => {
-        window.emailjs.send(serviceID, templateId, variables).then((res) => {
-        }).catch((err) => {
+    const sendFeedback = (serviceID: any, templateId: any, variables: any) => {
+        console.log('serviceID', serviceID)
+        console.log('templateId', templateId)
+        console.log('variables', variables)
+        window.emailjs.send(serviceID, templateId, variables).then((res:any) => {
+        }).catch((err: any) => {
           setErrorSendEmail('Sorry, error in sending email');
           setShowModal(true);
           console.error("There has been an error.  Here some thoughts on the error that occured:", err)}
@@ -107,6 +117,3 @@ const ContactForm = () => {
         </div>
     );
 }
-
-
-export default ContactForm;

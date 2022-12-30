@@ -1,9 +1,9 @@
 import React from 'react';
-import ContactForm from '../Contact-form/index';
+import ContactForm from 'components/Contact-form';
 
 import "./index.scss";
 
-const contact = () => {
+export default function Contact() {
     return (
         <div className="contact"
             id={"contact"}>
@@ -14,5 +14,3 @@ const contact = () => {
         </div>
     );
 };
-
-export default contact;

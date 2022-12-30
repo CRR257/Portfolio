@@ -1,13 +1,14 @@
 import React, { Fragment, useEffect } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import HomePage from '../Homepage/index';
-import About from '../About/index';
-import Projects from '../Projects/index';
-import Contact from '../Contact/index';
 import ReactGA from 'react-ga';
-import TagManager from 'react-gtm-module'
+import TagManager from 'react-gtm-module';
+import HomePage from 'pages/Homepage';
+import About from 'components/About';
+import Projects from 'components/Carousel';
+import Contact from 'components/Contact';
 
-const App = () => {
+
+function App() {
 
   const tagManagerArgs = {
     gtmId: 'GTM-5HJ3K9T'
@@ -31,6 +32,6 @@ const App = () => {
       </Fragment>
     </Router>
   );
-};
+}
 
 export default App;

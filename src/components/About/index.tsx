@@ -1,12 +1,13 @@
 import React from 'react';
-import clara from '../../img/general/clara.png';
-import salmonella from '../../img/general/salmonella.jpg';
-import salmonella2 from '../../img/general/salmonella2.jpg';
-import gala from '../../img/general/gala.jpg';
-import Cv from '../../cv/cv.pdf';
 import './index.scss';
 
-const about = () => {
+const clara = require('assets/img/general/clara.png');
+const salmonella = require('assets/img/general/salmonella.jpg');
+const salmonella2 = require('assets/img/general/salmonella2.jpg');
+const gala = require('assets/img/general/gala.jpg');
+const Cv = require('assets/cv/cv.pdf');
+
+export default function About() {
   window.scrollTo({top: 0, behavior: 'smooth'});
 
   return (
@@ -45,7 +46,7 @@ const about = () => {
           <span>
             But, one day, a special person showed me something that I liked more
             than microorganisms... Coding! ^^ <br />
-            After few little JS declarations and consoles.log(), few months
+            After some JS declarations and console.log(), few months
             later I decided to leave my job, my confort zone, be brave and start
             a bootcamp. There I learned JS, HTML, CSS, React, Node, testing and
             MongoDB, and here I am, loving to code in my free time and being a
@@ -72,6 +73,4 @@ const about = () => {
       </div>
     </div>
   );
-};
-
-export default about;
+}

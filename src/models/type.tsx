@@ -8,5 +8,5 @@ export declare interface TypeMessage {
 
 export const TypingSpeed = {
   DELETING_SPEED: 130,
-  TYPING_SPEED: 150
+  TYPING_SPEED: 130
 }

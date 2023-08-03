@@ -18,7 +18,8 @@ export default function TypeWriter() {
     const [state, setState] = useState(typeMessage);
     
     useEffect(() => {
-      let timer: any = "";
+      let timer: any = null;
+    
       const handleType = () => {
         setState(currentState => ({
           ...currentState,
@@ -27,7 +28,9 @@ export default function TypeWriter() {
         }));
         timer = setTimeout(handleType, state.typingSpeed);
       };
+    
       handleType();
+    
       return () => clearTimeout(timer);
     }, [state.isDeleting]);
     
